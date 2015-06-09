@@ -1,0 +1,575 @@
+USE [GD1C2015]
+GO
+/****** Object:  Schema [SELLARP]    Script Date: 06/09/2015 02:58:18 ******/
+CREATE SCHEMA [SELLARP] AUTHORIZATION [dbo]
+GO
+/****** Object:  Table [SELLARP].[Usuario]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Usuario](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Username] [varchar](50) NOT NULL,
+	[Contraseña] [char](40) NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Ultima_Fecha_Modif] [datetime] NOT NULL,
+	[Pregunta_Secreta] [varchar](140) NULL,
+	[Respuesta_Secreta] [char](40) NULL,
+ CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Pais]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Pais](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Descripcion] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Pais] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Moneda]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Moneda](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Descripcion] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Moneda] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [gd_esquema].[Maestra]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [gd_esquema].[Maestra](
+	[Cli_Pais_Codigo] [numeric](18, 0) NULL,
+	[Cli_Pais_Desc] [varchar](250) NULL,
+	[Cli_Nombre] [varchar](255) NULL,
+	[Cli_Apellido] [varchar](255) NULL,
+	[Cli_Tipo_Doc_Cod] [numeric](18, 0) NULL,
+	[Cli_Nro_Doc] [numeric](18, 0) NULL,
+	[Cli_Tipo_Doc_Desc] [varchar](255) NULL,
+	[Cli_Dom_Calle] [varchar](255) NULL,
+	[Cli_Dom_Nro] [numeric](18, 0) NULL,
+	[Cli_Dom_Piso] [numeric](18, 0) NULL,
+	[Cli_Dom_Depto] [varchar](10) NULL,
+	[Cli_Fecha_Nac] [datetime] NULL,
+	[Cli_Mail] [varchar](255) NULL,
+	[Cuenta_Numero] [numeric](18, 0) NULL,
+	[Cuenta_Fecha_Creacion] [datetime] NULL,
+	[Cuenta_Estado] [varchar](255) NULL,
+	[Cuenta_Pais_Codigo] [numeric](18, 0) NULL,
+	[Cuenta_Pais_Desc] [varchar](250) NULL,
+	[Cuenta_Fecha_Cierre] [datetime] NULL,
+	[Deposito_Codigo] [numeric](18, 0) NULL,
+	[Deposito_Fecha] [datetime] NULL,
+	[Deposito_Importe] [numeric](18, 2) NULL,
+	[Tarjeta_Numero] [varchar](16) NULL,
+	[Tarjeta_Fecha_Emision] [datetime] NULL,
+	[Tarjeta_Fecha_Vencimiento] [datetime] NULL,
+	[Tarjeta_Codigo_Seg] [varchar](3) NULL,
+	[Tarjeta_Emisor_Descripcion] [varchar](255) NULL,
+	[Cuenta_Dest_Numero] [numeric](18, 0) NULL,
+	[Cuenta_Dest_Fecha_Creacion] [datetime] NULL,
+	[Cuenta_Dest_Estado] [varchar](255) NULL,
+	[Cuenta_Dest_Pais_Codigo] [numeric](18, 0) NULL,
+	[Cuenta_Dest_Pais_Desc] [varchar](250) NULL,
+	[Cuenta_Dest_Fecha_Cierre] [datetime] NULL,
+	[Transf_Fecha] [datetime] NULL,
+	[Trans_Importe] [numeric](18, 2) NULL,
+	[Trans_Costo_Trans] [numeric](18, 2) NULL,
+	[Retiro_Fecha] [datetime] NULL,
+	[Retiro_Codigo] [numeric](18, 0) NULL,
+	[Retiro_Importe] [numeric](18, 2) NULL,
+	[Cheque_Numero] [numeric](18, 0) NULL,
+	[Cheque_Fecha] [datetime] NULL,
+	[Cheque_Importe] [numeric](18, 2) NULL,
+	[Banco_Cogido] [numeric](18, 0) NULL,
+	[Banco_Nombre] [varchar](255) NULL,
+	[Banco_Direccion] [varchar](255) NULL,
+	[Item_Factura_Descr] [varchar](255) NULL,
+	[Item_Factura_Importe] [numeric](18, 2) NULL,
+	[Factura_Numero] [numeric](18, 0) NULL,
+	[Factura_Fecha] [datetime] NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Rol]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Rol](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+	[Estado] [bit] NOT NULL,
+ CONSTRAINT [PK_Rol] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Funcionalidad]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Funcionalidad](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Descripcion] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Funcionalidad] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Tipo_De_Cuenta]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Tipo_De_Cuenta](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Descripcion_Tipo] [varchar](140) NOT NULL,
+	[Costo_Apertura] [numeric](18, 0) NOT NULL,
+	[Duracion] [numeric](18, 0) NOT NULL,
+	[Costo_Transferencia] [numeric](18, 0) NOT NULL,
+ CONSTRAINT [PK_Tipo_De_Cuenta] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Banco]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Banco](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+	[Direccion] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Banco] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[RolxUsuario]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [SELLARP].[RolxUsuario](
+	[Usuario] [uniqueidentifier] NOT NULL,
+	[Rol] [uniqueidentifier] NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [SELLARP].[RolxFuncionalidad]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [SELLARP].[RolxFuncionalidad](
+	[Rol] [uniqueidentifier] NOT NULL,
+	[Funcionalidad] [uniqueidentifier] NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [SELLARP].[Login]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Login](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Usuario] [uniqueidentifier] NOT NULL,
+	[Usuario] [varchar](50) NULL,
+	[Correcto] [bit] NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+ CONSTRAINT [PK_Login] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Cliente]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Cliente](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Usuario] [uniqueidentifier] NOT NULL,
+	[Id_Pais] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+	[Apellido] [varchar](50) NOT NULL,
+	[Tipo_Documento] [numeric](18, 0) NOT NULL,
+	[Descripcion_Documeneto] [varchar](50) NOT NULL,
+	[Nacionalidad] [varchar](50) NOT NULL,
+	[Nro_Dni] [numeric](18, 0) NOT NULL,
+	[Calle_Domicilio] [varchar](50) NOT NULL,
+	[Nro_Domicilio] [numeric](18, 0) NOT NULL,
+	[Piso] [numeric](18, 0) NOT NULL,
+	[Depto] [numeric](18, 0) NOT NULL,
+	[Localidad] [varchar](50) NOT NULL,
+	[Mail] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Cliente] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Cheque]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Cheque](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Banco] [uniqueidentifier] NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+	[Importe] [numeric](18, 0) NOT NULL,
+	[Nombre_Librador] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Cheque] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Cuenta]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [SELLARP].[Cuenta](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Pais] [uniqueidentifier] NOT NULL,
+	[Id_Moneda] [uniqueidentifier] NOT NULL,
+	[Id_Cliente] [uniqueidentifier] NOT NULL,
+	[Id_Tipo_Cuenta] [uniqueidentifier] NOT NULL,
+	[Saldo] [numeric](18, 0) NOT NULL,
+	[Estado] [bit] NOT NULL,
+	[Fecha_Cierre] [datetime] NOT NULL,
+ CONSTRAINT [PK_Cuenta] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [SELLARP].[Tarjeta]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Tarjeta](
+	[Id] [char](32) NOT NULL,
+	[Id_Cliente] [uniqueidentifier] NOT NULL,
+	[Id_Banco] [uniqueidentifier] NOT NULL,
+	[Fecha_Emision] [datetime] NOT NULL,
+	[Fecha_Vencimiento] [datetime] NOT NULL,
+	[Codigo_Seguridad] [numeric](18, 0) NOT NULL,
+	[Emisor] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Tarjeta] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Factura]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [SELLARP].[Factura](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Cliente] [uniqueidentifier] NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+ CONSTRAINT [PK_Factura] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [SELLARP].[Transferencia]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [SELLARP].[Transferencia](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Cuenta_Origen] [uniqueidentifier] NOT NULL,
+	[Id_Cuenta_Destino] [uniqueidentifier] NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+	[Importe] [numeric](18, 0) NOT NULL,
+ CONSTRAINT [PK_Transferencia] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [SELLARP].[Retiro]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [SELLARP].[Retiro](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Cheque] [uniqueidentifier] NOT NULL,
+	[Id_Cuenta] [uniqueidentifier] NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+ CONSTRAINT [PK_Retiro] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [SELLARP].[Deposito]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Deposito](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Cuenta] [uniqueidentifier] NOT NULL,
+	[Id_Moneda] [uniqueidentifier] NOT NULL,
+	[Id_Tarjeta] [char](32) NOT NULL,
+	[Importe] [numeric](18, 0) NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+ CONSTRAINT [PK_Deposito] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [SELLARP].[Item_Factura]    Script Date: 06/09/2015 02:58:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [SELLARP].[Item_Factura](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Id_Cuenta] [uniqueidentifier] NOT NULL,
+	[Id_Factura] [uniqueidentifier] NOT NULL,
+	[Descripcion] [varchar](140) NOT NULL,
+	[Importe] [numeric](18, 0) NOT NULL,
+	[Facturado] [bit] NOT NULL,
+ CONSTRAINT [PK_Item_Factura] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  ForeignKey [FK_Cheque_Banco]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Cheque]  WITH CHECK ADD  CONSTRAINT [FK_Cheque_Banco] FOREIGN KEY([Id_Banco])
+REFERENCES [SELLARP].[Banco] ([Id])
+GO
+ALTER TABLE [SELLARP].[Cheque] CHECK CONSTRAINT [FK_Cheque_Banco]
+GO
+/****** Object:  ForeignKey [FK_Cliente_Pais]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Cliente]  WITH CHECK ADD  CONSTRAINT [FK_Cliente_Pais] FOREIGN KEY([Id_Pais])
+REFERENCES [SELLARP].[Pais] ([Id])
+GO
+ALTER TABLE [SELLARP].[Cliente] CHECK CONSTRAINT [FK_Cliente_Pais]
+GO
+/****** Object:  ForeignKey [FK_Cliente_Usuario]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Cliente]  WITH CHECK ADD  CONSTRAINT [FK_Cliente_Usuario] FOREIGN KEY([Id_Usuario])
+REFERENCES [SELLARP].[Usuario] ([Id])
+GO
+ALTER TABLE [SELLARP].[Cliente] CHECK CONSTRAINT [FK_Cliente_Usuario]
+GO
+/****** Object:  ForeignKey [FK_Cuenta_Cliente]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Cuenta]  WITH CHECK ADD  CONSTRAINT [FK_Cuenta_Cliente] FOREIGN KEY([Id_Cliente])
+REFERENCES [SELLARP].[Cliente] ([Id])
+GO
+ALTER TABLE [SELLARP].[Cuenta] CHECK CONSTRAINT [FK_Cuenta_Cliente]
+GO
+/****** Object:  ForeignKey [FK_Cuenta_Moneda]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Cuenta]  WITH CHECK ADD  CONSTRAINT [FK_Cuenta_Moneda] FOREIGN KEY([Id_Moneda])
+REFERENCES [SELLARP].[Moneda] ([Id])
+GO
+ALTER TABLE [SELLARP].[Cuenta] CHECK CONSTRAINT [FK_Cuenta_Moneda]
+GO
+/****** Object:  ForeignKey [FK_Cuenta_Pais]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Cuenta]  WITH CHECK ADD  CONSTRAINT [FK_Cuenta_Pais] FOREIGN KEY([Id_Pais])
+REFERENCES [SELLARP].[Pais] ([Id])
+GO
+ALTER TABLE [SELLARP].[Cuenta] CHECK CONSTRAINT [FK_Cuenta_Pais]
+GO
+/****** Object:  ForeignKey [FK_Cuenta_Tipo_De_Cuenta]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Cuenta]  WITH CHECK ADD  CONSTRAINT [FK_Cuenta_Tipo_De_Cuenta] FOREIGN KEY([Id_Tipo_Cuenta])
+REFERENCES [SELLARP].[Tipo_De_Cuenta] ([Id])
+GO
+ALTER TABLE [SELLARP].[Cuenta] CHECK CONSTRAINT [FK_Cuenta_Tipo_De_Cuenta]
+GO
+/****** Object:  ForeignKey [FK_Deposito_Cuenta]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Deposito]  WITH CHECK ADD  CONSTRAINT [FK_Deposito_Cuenta] FOREIGN KEY([Id_Cuenta])
+REFERENCES [SELLARP].[Cuenta] ([Id])
+GO
+ALTER TABLE [SELLARP].[Deposito] CHECK CONSTRAINT [FK_Deposito_Cuenta]
+GO
+/****** Object:  ForeignKey [FK_Deposito_Moneda]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Deposito]  WITH CHECK ADD  CONSTRAINT [FK_Deposito_Moneda] FOREIGN KEY([Id_Moneda])
+REFERENCES [SELLARP].[Moneda] ([Id])
+GO
+ALTER TABLE [SELLARP].[Deposito] CHECK CONSTRAINT [FK_Deposito_Moneda]
+GO
+/****** Object:  ForeignKey [FK_Deposito_Tarjeta]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Deposito]  WITH CHECK ADD  CONSTRAINT [FK_Deposito_Tarjeta] FOREIGN KEY([Id_Tarjeta])
+REFERENCES [SELLARP].[Tarjeta] ([Id])
+GO
+ALTER TABLE [SELLARP].[Deposito] CHECK CONSTRAINT [FK_Deposito_Tarjeta]
+GO
+/****** Object:  ForeignKey [FK_Factura_Cliente]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Factura]  WITH CHECK ADD  CONSTRAINT [FK_Factura_Cliente] FOREIGN KEY([Id_Cliente])
+REFERENCES [SELLARP].[Cliente] ([Id])
+GO
+ALTER TABLE [SELLARP].[Factura] CHECK CONSTRAINT [FK_Factura_Cliente]
+GO
+/****** Object:  ForeignKey [FK_Item_Factura_Cuenta]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Item_Factura]  WITH CHECK ADD  CONSTRAINT [FK_Item_Factura_Cuenta] FOREIGN KEY([Id_Cuenta])
+REFERENCES [SELLARP].[Cuenta] ([Id])
+GO
+ALTER TABLE [SELLARP].[Item_Factura] CHECK CONSTRAINT [FK_Item_Factura_Cuenta]
+GO
+/****** Object:  ForeignKey [FK_Item_Factura_Factura]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Item_Factura]  WITH CHECK ADD  CONSTRAINT [FK_Item_Factura_Factura] FOREIGN KEY([Id_Factura])
+REFERENCES [SELLARP].[Factura] ([Id])
+GO
+ALTER TABLE [SELLARP].[Item_Factura] CHECK CONSTRAINT [FK_Item_Factura_Factura]
+GO
+/****** Object:  ForeignKey [FK_Login_Usuario]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Login]  WITH CHECK ADD  CONSTRAINT [FK_Login_Usuario] FOREIGN KEY([Id_Usuario])
+REFERENCES [SELLARP].[Usuario] ([Id])
+GO
+ALTER TABLE [SELLARP].[Login] CHECK CONSTRAINT [FK_Login_Usuario]
+GO
+/****** Object:  ForeignKey [FK_Retiro_Cheque]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Retiro]  WITH CHECK ADD  CONSTRAINT [FK_Retiro_Cheque] FOREIGN KEY([Id_Cheque])
+REFERENCES [SELLARP].[Cheque] ([Id])
+GO
+ALTER TABLE [SELLARP].[Retiro] CHECK CONSTRAINT [FK_Retiro_Cheque]
+GO
+/****** Object:  ForeignKey [FK_Retiro_Cuenta]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Retiro]  WITH CHECK ADD  CONSTRAINT [FK_Retiro_Cuenta] FOREIGN KEY([Id_Cuenta])
+REFERENCES [SELLARP].[Cuenta] ([Id])
+GO
+ALTER TABLE [SELLARP].[Retiro] CHECK CONSTRAINT [FK_Retiro_Cuenta]
+GO
+/****** Object:  ForeignKey [FK_RolxFuncionalidad_Funcionalidad]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[RolxFuncionalidad]  WITH CHECK ADD  CONSTRAINT [FK_RolxFuncionalidad_Funcionalidad] FOREIGN KEY([Funcionalidad])
+REFERENCES [SELLARP].[Funcionalidad] ([Id])
+GO
+ALTER TABLE [SELLARP].[RolxFuncionalidad] CHECK CONSTRAINT [FK_RolxFuncionalidad_Funcionalidad]
+GO
+/****** Object:  ForeignKey [FK_RolxFuncionalidad_Rol]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[RolxFuncionalidad]  WITH CHECK ADD  CONSTRAINT [FK_RolxFuncionalidad_Rol] FOREIGN KEY([Rol])
+REFERENCES [SELLARP].[Rol] ([Id])
+GO
+ALTER TABLE [SELLARP].[RolxFuncionalidad] CHECK CONSTRAINT [FK_RolxFuncionalidad_Rol]
+GO
+/****** Object:  ForeignKey [FK_RolxUsuario_Rol]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[RolxUsuario]  WITH CHECK ADD  CONSTRAINT [FK_RolxUsuario_Rol] FOREIGN KEY([Rol])
+REFERENCES [SELLARP].[Rol] ([Id])
+GO
+ALTER TABLE [SELLARP].[RolxUsuario] CHECK CONSTRAINT [FK_RolxUsuario_Rol]
+GO
+/****** Object:  ForeignKey [FK_RolxUsuario_Usuario]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[RolxUsuario]  WITH CHECK ADD  CONSTRAINT [FK_RolxUsuario_Usuario] FOREIGN KEY([Usuario])
+REFERENCES [SELLARP].[Usuario] ([Id])
+GO
+ALTER TABLE [SELLARP].[RolxUsuario] CHECK CONSTRAINT [FK_RolxUsuario_Usuario]
+GO
+/****** Object:  ForeignKey [FK_Tarjeta_Banco]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Tarjeta]  WITH CHECK ADD  CONSTRAINT [FK_Tarjeta_Banco] FOREIGN KEY([Id_Banco])
+REFERENCES [SELLARP].[Banco] ([Id])
+GO
+ALTER TABLE [SELLARP].[Tarjeta] CHECK CONSTRAINT [FK_Tarjeta_Banco]
+GO
+/****** Object:  ForeignKey [FK_Tarjeta_Cliente]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Tarjeta]  WITH CHECK ADD  CONSTRAINT [FK_Tarjeta_Cliente] FOREIGN KEY([Id_Cliente])
+REFERENCES [SELLARP].[Cliente] ([Id])
+GO
+ALTER TABLE [SELLARP].[Tarjeta] CHECK CONSTRAINT [FK_Tarjeta_Cliente]
+GO
+/****** Object:  ForeignKey [FK_Transferencia_Cuenta_Destino]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Transferencia]  WITH CHECK ADD  CONSTRAINT [FK_Transferencia_Cuenta_Destino] FOREIGN KEY([Id_Cuenta_Destino])
+REFERENCES [SELLARP].[Cuenta] ([Id])
+GO
+ALTER TABLE [SELLARP].[Transferencia] CHECK CONSTRAINT [FK_Transferencia_Cuenta_Destino]
+GO
+/****** Object:  ForeignKey [FK_Transferencia_Cuenta_Origen]    Script Date: 06/09/2015 02:58:19 ******/
+ALTER TABLE [SELLARP].[Transferencia]  WITH CHECK ADD  CONSTRAINT [FK_Transferencia_Cuenta_Origen] FOREIGN KEY([Id_Cuenta_Origen])
+REFERENCES [SELLARP].[Cuenta] ([Id])
+GO
+ALTER TABLE [SELLARP].[Transferencia] CHECK CONSTRAINT [FK_Transferencia_Cuenta_Origen]
+GO
