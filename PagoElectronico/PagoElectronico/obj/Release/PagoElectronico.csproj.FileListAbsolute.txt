@@ -1,0 +1,7 @@
+C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\bin\Release\PagoElectronico.exe
+C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\bin\Release\PagoElectronico.pdb
+C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\ResolveAssemblyReference.cache
+C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Properties.Resources.resources
+C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.csproj.GenerateResource.Cache
+C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.exe
+C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.pdb
