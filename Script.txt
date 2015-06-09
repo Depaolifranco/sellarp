@@ -573,3 +573,5 @@ REFERENCES [SELLARP].[Cuenta] ([Id])
 GO
 ALTER TABLE [SELLARP].[Transferencia] CHECK CONSTRAINT [FK_Transferencia_Cuenta_Origen]
 GO
+
+probando editar
