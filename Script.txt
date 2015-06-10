@@ -1,6 +1,7 @@
-USE [GD1C2015]
+USE [GDIC2015]
 GO
 /****** Object:  Schema [SELLARP]    Script Date: 06/09/2015 02:58:18 ******/
+/*IF  (NOT EXISTS (SELECT * FROM sys.schemas WHERE name = N'SELLARP'))*/
 CREATE SCHEMA [SELLARP] AUTHORIZATION [dbo]
 GO
 /****** Object:  Table [SELLARP].[Usuario]    Script Date: 06/09/2015 02:58:19 ******/
@@ -11,13 +12,13 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Usuario](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Username] [varchar](50) NOT NULL,
-	[Contraseña] [char](40) NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
+	[Username] [varchar](100) NOT NULL,
+	[Contraseña] [varchar](50) NOT NULL,
 	[Fecha_Creacion] [datetime] NOT NULL,
 	[Ultima_Fecha_Modif] [datetime] NOT NULL,
 	[Pregunta_Secreta] [varchar](140) NULL,
-	[Respuesta_Secreta] [char](40) NULL,
+	[Respuesta_Secreta] [varchar](40) NULL,
  CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -34,8 +35,8 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Pais](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Descripcion] [varchar](50) NOT NULL,
+	[Id] [numeric](18, 0) NOT NULL,
+	[Descripcion] [varchar](250) NOT NULL,
  CONSTRAINT [PK_Pais] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -52,7 +53,7 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Moneda](
-	[Id] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
 	[Descripcion] [varchar](50) NOT NULL,
  CONSTRAINT [PK_Moneda] PRIMARY KEY CLUSTERED 
 (
@@ -62,67 +63,7 @@ CREATE TABLE [SELLARP].[Moneda](
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  Table [gd_esquema].[Maestra]    Script Date: 06/09/2015 02:58:19 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-SET ANSI_PADDING ON
-GO
-CREATE TABLE [gd_esquema].[Maestra](
-	[Cli_Pais_Codigo] [numeric](18, 0) NULL,
-	[Cli_Pais_Desc] [varchar](250) NULL,
-	[Cli_Nombre] [varchar](255) NULL,
-	[Cli_Apellido] [varchar](255) NULL,
-	[Cli_Tipo_Doc_Cod] [numeric](18, 0) NULL,
-	[Cli_Nro_Doc] [numeric](18, 0) NULL,
-	[Cli_Tipo_Doc_Desc] [varchar](255) NULL,
-	[Cli_Dom_Calle] [varchar](255) NULL,
-	[Cli_Dom_Nro] [numeric](18, 0) NULL,
-	[Cli_Dom_Piso] [numeric](18, 0) NULL,
-	[Cli_Dom_Depto] [varchar](10) NULL,
-	[Cli_Fecha_Nac] [datetime] NULL,
-	[Cli_Mail] [varchar](255) NULL,
-	[Cuenta_Numero] [numeric](18, 0) NULL,
-	[Cuenta_Fecha_Creacion] [datetime] NULL,
-	[Cuenta_Estado] [varchar](255) NULL,
-	[Cuenta_Pais_Codigo] [numeric](18, 0) NULL,
-	[Cuenta_Pais_Desc] [varchar](250) NULL,
-	[Cuenta_Fecha_Cierre] [datetime] NULL,
-	[Deposito_Codigo] [numeric](18, 0) NULL,
-	[Deposito_Fecha] [datetime] NULL,
-	[Deposito_Importe] [numeric](18, 2) NULL,
-	[Tarjeta_Numero] [varchar](16) NULL,
-	[Tarjeta_Fecha_Emision] [datetime] NULL,
-	[Tarjeta_Fecha_Vencimiento] [datetime] NULL,
-	[Tarjeta_Codigo_Seg] [varchar](3) NULL,
-	[Tarjeta_Emisor_Descripcion] [varchar](255) NULL,
-	[Cuenta_Dest_Numero] [numeric](18, 0) NULL,
-	[Cuenta_Dest_Fecha_Creacion] [datetime] NULL,
-	[Cuenta_Dest_Estado] [varchar](255) NULL,
-	[Cuenta_Dest_Pais_Codigo] [numeric](18, 0) NULL,
-	[Cuenta_Dest_Pais_Desc] [varchar](250) NULL,
-	[Cuenta_Dest_Fecha_Cierre] [datetime] NULL,
-	[Transf_Fecha] [datetime] NULL,
-	[Trans_Importe] [numeric](18, 2) NULL,
-	[Trans_Costo_Trans] [numeric](18, 2) NULL,
-	[Retiro_Fecha] [datetime] NULL,
-	[Retiro_Codigo] [numeric](18, 0) NULL,
-	[Retiro_Importe] [numeric](18, 2) NULL,
-	[Cheque_Numero] [numeric](18, 0) NULL,
-	[Cheque_Fecha] [datetime] NULL,
-	[Cheque_Importe] [numeric](18, 2) NULL,
-	[Banco_Cogido] [numeric](18, 0) NULL,
-	[Banco_Nombre] [varchar](255) NULL,
-	[Banco_Direccion] [varchar](255) NULL,
-	[Item_Factura_Descr] [varchar](255) NULL,
-	[Item_Factura_Importe] [numeric](18, 2) NULL,
-	[Factura_Numero] [numeric](18, 0) NULL,
-	[Factura_Fecha] [datetime] NULL
-) ON [PRIMARY]
-GO
-SET ANSI_PADDING OFF
-GO
+
 /****** Object:  Table [SELLARP].[Rol]    Script Date: 06/09/2015 02:58:19 ******/
 SET ANSI_NULLS ON
 GO
@@ -131,7 +72,7 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Rol](
-	[Id] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
 	[Nombre] [varchar](50) NOT NULL,
 	[Estado] [bit] NOT NULL,
  CONSTRAINT [PK_Rol] PRIMARY KEY CLUSTERED 
@@ -150,7 +91,7 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Funcionalidad](
-	[Id] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
 	[Descripcion] [varchar](50) NOT NULL,
  CONSTRAINT [PK_Funcionalidad] PRIMARY KEY CLUSTERED 
 (
@@ -168,11 +109,11 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Tipo_De_Cuenta](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Descripcion_Tipo] [varchar](140) NOT NULL,
-	[Costo_Apertura] [numeric](18, 0) NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
+	[Descripcion_Tipo] [varchar](255) NOT NULL,
+	[Costo_Apertura] [numeric](18, 2) NOT NULL,
 	[Duracion] [numeric](18, 0) NOT NULL,
-	[Costo_Transferencia] [numeric](18, 0) NOT NULL,
+	[Costo_Transferencia] [numeric](18, 2) NOT NULL,
  CONSTRAINT [PK_Tipo_De_Cuenta] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -189,9 +130,9 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Banco](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Nombre] [varchar](50) NOT NULL,
-	[Direccion] [varchar](50) NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
+	[Nombre] [varchar](255) NOT NULL,
+	[Direccion] [varchar](255) NOT NULL,
  CONSTRAINT [PK_Banco] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -206,8 +147,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [SELLARP].[RolxUsuario](
-	[Usuario] [uniqueidentifier] NOT NULL,
-	[Rol] [uniqueidentifier] NOT NULL
+	[Usuario] [numeric](18, 0) NOT NULL,
+	[Rol] [numeric](18, 0) NOT NULL
 ) ON [PRIMARY]
 GO
 /****** Object:  Table [SELLARP].[RolxFuncionalidad]    Script Date: 06/09/2015 02:58:19 ******/
@@ -216,8 +157,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [SELLARP].[RolxFuncionalidad](
-	[Rol] [uniqueidentifier] NOT NULL,
-	[Funcionalidad] [uniqueidentifier] NOT NULL
+	[Rol] [numeric](18, 0) NOT NULL,
+	[Funcionalidad] [numeric](18, 0) NOT NULL
 ) ON [PRIMARY]
 GO
 /****** Object:  Table [SELLARP].[Login]    Script Date: 06/09/2015 02:58:19 ******/
@@ -228,9 +169,9 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Login](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Usuario] [uniqueidentifier] NOT NULL,
-	[Usuario] [varchar](50) NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
+	[Id_Usuario] [numeric](18, 0) NOT NULL,
+	[Usuario] [varchar](100) NULL,
 	[Correcto] [bit] NOT NULL,
 	[Fecha] [datetime] NOT NULL,
  CONSTRAINT [PK_Login] PRIMARY KEY CLUSTERED 
@@ -249,22 +190,22 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Cliente](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Usuario] [uniqueidentifier] NOT NULL,
-	[Id_Pais] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
+	[Id_Usuario] [numeric](18, 0) NOT NULL,
+	[Id_Pais] [numeric](18, 0) NOT NULL,
 	[Estado] [bit] NOT NULL,
-	[Nombre] [varchar](50) NOT NULL,
-	[Apellido] [varchar](50) NOT NULL,
+	[Nombre] [varchar](255) NOT NULL,
+	[Apellido] [varchar](255) NOT NULL,
 	[Tipo_Documento] [numeric](18, 0) NOT NULL,
-	[Descripcion_Documeneto] [varchar](50) NOT NULL,
-	[Nacionalidad] [varchar](50) NOT NULL,
+	[Descripcion_Documento] [varchar](255) NOT NULL,
 	[Nro_Dni] [numeric](18, 0) NOT NULL,
-	[Calle_Domicilio] [varchar](50) NOT NULL,
+	[Calle_Domicilio] [varchar](255) NOT NULL,
 	[Nro_Domicilio] [numeric](18, 0) NOT NULL,
 	[Piso] [numeric](18, 0) NOT NULL,
 	[Depto] [numeric](18, 0) NOT NULL,
-	[Localidad] [varchar](50) NOT NULL,
-	[Mail] [varchar](50) NOT NULL,
+	[Localidad] [varchar](255) NOT NULL,
+	[Mail] [varchar](255) NOT NULL,
+	[Fecha_Nacimiento] [datetime] NOT NULL,
  CONSTRAINT [PK_Cliente] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -281,11 +222,11 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Cheque](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Banco] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) NOT NULL,
+	[Id_Banco] [numeric](18, 0) NOT NULL,
 	[Fecha] [datetime] NOT NULL,
-	[Importe] [numeric](18, 0) NOT NULL,
-	[Nombre_Librador] [varchar](50) NOT NULL,
+	[Importe] [numeric](18, 2) NOT NULL,
+	[Nombre_Librador] [varchar](255) NOT NULL,
  CONSTRAINT [PK_Cheque] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -300,12 +241,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [SELLARP].[Cuenta](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Pais] [uniqueidentifier] NOT NULL,
-	[Id_Moneda] [uniqueidentifier] NOT NULL,
-	[Id_Cliente] [uniqueidentifier] NOT NULL,
-	[Id_Tipo_Cuenta] [uniqueidentifier] NOT NULL,
-	[Saldo] [numeric](18, 0) NOT NULL,
+	[Id] [numeric](18, 0) NOT NULL,
+	[Id_Pais] [numeric](18, 0) NOT NULL,
+	[Id_Moneda] [numeric](18, 0) NOT NULL,
+	[Id_Cliente] [numeric](18, 0) NOT NULL,
+	[Id_Tipo_Cuenta] [numeric](18, 0) NOT NULL,
+	[Saldo] [numeric](18, 2) NOT NULL,
 	[Estado] [bit] NOT NULL,
 	[Fecha_Cierre] [datetime] NOT NULL,
  CONSTRAINT [PK_Cuenta] PRIMARY KEY CLUSTERED 
@@ -322,13 +263,14 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Tarjeta](
-	[Id] [char](32) NOT NULL,
-	[Id_Cliente] [uniqueidentifier] NOT NULL,
-	[Id_Banco] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
+	[Id_Tarjeta] [varchar](16) NOT NULL,
+	[Id_Cliente] [numeric](18, 0) NOT NULL,
+	[Id_Banco] [numeric](18, 0) NOT NULL,
 	[Fecha_Emision] [datetime] NOT NULL,
 	[Fecha_Vencimiento] [datetime] NOT NULL,
-	[Codigo_Seguridad] [numeric](18, 0) NOT NULL,
-	[Emisor] [varchar](50) NOT NULL,
+	[Codigo_Seguridad] [varchar](3) NOT NULL,
+	[Emisor] [varchar](255) NOT NULL,
  CONSTRAINT [PK_Tarjeta] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -343,8 +285,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [SELLARP].[Factura](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Cliente] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) NOT NULL,
+	[Id_Cliente] [numeric](18, 0) NOT NULL,
 	[Fecha] [datetime] NOT NULL,
  CONSTRAINT [PK_Factura] PRIMARY KEY CLUSTERED 
 (
@@ -358,11 +300,11 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [SELLARP].[Transferencia](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Cuenta_Origen] [uniqueidentifier] NOT NULL,
-	[Id_Cuenta_Destino] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) NOT NULL,
+	[Id_Cuenta_Origen] [numeric](18, 0) NOT NULL,
+	[Id_Cuenta_Destino] [numeric](18, 0) NOT NULL,
 	[Fecha] [datetime] NOT NULL,
-	[Importe] [numeric](18, 0) NOT NULL,
+	[Importe] [numeric](18, 2) NOT NULL,
  CONSTRAINT [PK_Transferencia] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -375,9 +317,10 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [SELLARP].[Retiro](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Cheque] [uniqueidentifier] NOT NULL,
-	[Id_Cuenta] [uniqueidentifier] NOT NULL,
+	[Id] [numeric](18, 0) NOT NULL,
+	[Id_Cheque] [numeric](18, 0) NOT NULL,
+	[Id_Cuenta] [numeric](18, 0) NOT NULL,
+	[Importe] [numeric](18, 2) NOT NULL,
 	[Fecha] [datetime] NOT NULL,
  CONSTRAINT [PK_Retiro] PRIMARY KEY CLUSTERED 
 (
@@ -392,12 +335,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_PADDING ON
 GO
-CREATE TABLE [SELLARP].[Deposito](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Cuenta] [uniqueidentifier] NOT NULL,
-	[Id_Moneda] [uniqueidentifier] NOT NULL,
-	[Id_Tarjeta] [char](32) NOT NULL,
-	[Importe] [numeric](18, 0) NOT NULL,
+CREATE TABLE [SELLARP].[Deposito]( 
+	[Id] [numeric](18, 0) NOT NULL,
+	[Id_Cuenta] [numeric](18, 0) NOT NULL,
+	[Id_Moneda] [numeric](18, 0) NOT NULL,
+	[Id_Tarjeta] [numeric](18, 0) NOT NULL,
+	[Importe] [numeric](18, 2) NOT NULL,
 	[Fecha] [datetime] NOT NULL,
  CONSTRAINT [PK_Deposito] PRIMARY KEY CLUSTERED 
 (
@@ -415,11 +358,11 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [SELLARP].[Item_Factura](
-	[Id] [uniqueidentifier] NOT NULL,
-	[Id_Cuenta] [uniqueidentifier] NOT NULL,
-	[Id_Factura] [uniqueidentifier] NOT NULL,
-	[Descripcion] [varchar](140) NOT NULL,
-	[Importe] [numeric](18, 0) NOT NULL,
+	[Id] [numeric](18, 0) identity NOT NULL,
+	[Id_Cuenta] [numeric](18, 0) NOT NULL,
+	[Id_Factura] [numeric](18, 0) NOT NULL,
+	[Descripcion] [varchar](255) NOT NULL,
+	[Importe] [numeric](18, 2) NOT NULL,
 	[Facturado] [bit] NOT NULL,
  CONSTRAINT [PK_Item_Factura] PRIMARY KEY CLUSTERED 
 (
