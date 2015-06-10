@@ -516,3 +516,33 @@ REFERENCES [SELLARP].[Cuenta] ([Id])
 GO
 ALTER TABLE [SELLARP].[Transferencia] CHECK CONSTRAINT [FK_Transferencia_Cuenta_Origen]
 GO
+
+
+
+
+/*comienza la migracion*/
+
+INSERT INTO [GDIC2015].[SELLARP].[Pais]
+           ([Id]
+           ,[Descripcion])
+     select Cli_Pais_Codigo, Cli_Pais_Desc
+     from gd_esquema.Maestra
+     group by Cli_Pais_Codigo, Cli_Pais_Desc
+GO
+
+INSERT INTO [GDIC2015].[SELLARP].[Usuario]
+           ([Username]
+           ,[Contraseña]
+           ,[Fecha_Creacion]
+           ,[Ultima_Fecha_Modif]
+           ,[Pregunta_Secreta]
+           ,[Respuesta_Secreta])
+     select substring(master.Cli_Nombre,1,2)+ master.Cli_Apellido,
+     master.Cli_Dom_Nro,
+     GETDATE(),
+     GETDATE(),
+     NULL,
+     NULL
+     from gd_esquema.Maestra as master
+     group by substring(master.Cli_Nombre,1,2)+ master.Cli_Apellido, Cli_Dom_Nro
+GO
