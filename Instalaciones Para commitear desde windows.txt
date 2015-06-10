@@ -1,0 +1,18 @@
+Manual de instalacion para subir proyectos de visual studio a git.
+
+1)Bajar el tortoiseGit
+
+https://code.google.com/p/tortoisegit/wiki/Download
+
+2)Instalar el TortoiseGit, adicionalmente podes, bajar el package en espaniol mas abajo en la pagina e instalarlo.
+
+3)Bajar el git source control provider de visual studio para la version 2008.
+
+http://gitscc.codeplex.com/releases/view/46589
+
+4) Bajar e instalar (yo le mande a todo nextt) el windowsgit desde aca 
+
+https://msysgit.github.io/
+
+5) Para clonar el repo vas a cualquier carpeta, y como ya instalaste el tortoise, deberias hacer click derecho y clone repository.
+

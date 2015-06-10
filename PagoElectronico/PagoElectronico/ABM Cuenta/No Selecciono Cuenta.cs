@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace PagoElectronico.ABM_Cuenta
 {
-    public partial class Form1 : Form
+    public partial class FormNoSeleccionoCta : Form
     {
-        public Form1()
+        public FormNoSeleccionoCta()
         {
             InitializeComponent();
         }
