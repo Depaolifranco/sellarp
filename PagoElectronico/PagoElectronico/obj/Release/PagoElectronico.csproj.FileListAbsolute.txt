@@ -5,3 +5,5 @@ C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\Pago
 C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.csproj.GenerateResource.Cache
 C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.exe
 C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.pdb
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.exe
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.pdb
