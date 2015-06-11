@@ -9,11 +9,17 @@ using System.Windows.Forms;
 
 namespace PagoElectronico.Listados
 {
-    public partial class Form1 : Form
+    public partial class PantallaListados : Form
     {
-        public Form1()
+        public PantallaListados()
         {
             InitializeComponent();
+        }
+
+        private void buttonLimpiar_Click(object sender, EventArgs e)
+        {
+            textBoxUsername.Text = "";
+            textBoxMail.Text = "";
         }
     }
 }
