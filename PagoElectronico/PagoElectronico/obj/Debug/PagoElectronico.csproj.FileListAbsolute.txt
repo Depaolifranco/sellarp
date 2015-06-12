@@ -5,3 +5,14 @@ C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\Pago
 C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\bin\Debug\PagoElectronico.pdb
 C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.exe
 C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.pdb
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cliente.PantallaABMCliente.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cliente.PantallaAltaCliente.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.PantallaInicio.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Properties.Resources.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.csproj.GenerateResource.Cache
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.exe
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.pdb
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Funciones.PantallaFunciones.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Listados.PantallaListados.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Login.PantallaLogin.resources

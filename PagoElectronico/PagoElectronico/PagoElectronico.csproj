@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{1A425235-25E0-4A09-B3C4-84F19D9A2184}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABM Cliente\PantallaAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cliente\PantallaAltaCliente.Designer.cs">
+      <DependentUpon>PantallaAltaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM Rol\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,11 +81,11 @@
     <Compile Include="ABM de Usuario\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM Cliente\Form1.cs">
+    <Compile Include="ABM Cliente\PantallaABMCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM Cliente\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ABM Cliente\PantallaABMCliente.Designer.cs">
+      <DependentUpon>PantallaABMCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="ABM Cuenta\Form1.cs">
       <SubType>Form</SubType>
@@ -93,11 +99,17 @@
     <Compile Include="Consulta Saldos\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Listados\Form1.cs">
+    <Compile Include="Funciones\PantallaFunciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Listados\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Funciones\PantallaFunciones.Designer.cs">
+      <DependentUpon>PantallaFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listados\PantallaListados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listados\PantallaListados.Designer.cs">
+      <DependentUpon>PantallaListados.cs</DependentUpon>
     </Compile>
     <Compile Include="Facturacion\Form1.cs">
       <SubType>Form</SubType>
@@ -123,20 +135,43 @@
     <Compile Include="Depositos\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\Form1.cs">
+    <Compile Include="Login\PantallaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login\PantallaLogin.Designer.cs">
+      <DependentUpon>PantallaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="PantallaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="PantallaInicio.Designer.cs">
+      <DependentUpon>PantallaInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABM Cliente\PantallaABMCliente.resx">
+      <DependentUpon>PantallaABMCliente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cliente\PantallaAltaCliente.resx">
+      <DependentUpon>PantallaAltaCliente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funciones\PantallaFunciones.resx">
+      <DependentUpon>PantallaFunciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listados\PantallaListados.resx">
+      <DependentUpon>PantallaListados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\PantallaLogin.resx">
+      <DependentUpon>PantallaLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaInicio.resx">
+      <DependentUpon>PantallaInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
