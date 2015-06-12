@@ -35,6 +35,8 @@
             this.buttonLimpiar = new System.Windows.Forms.Button();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.labelDoc = new System.Windows.Forms.Label();
+            this.textBoxDoc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelUsername
@@ -71,7 +73,7 @@
             // 
             // buttonLimpiar
             // 
-            this.buttonLimpiar.Location = new System.Drawing.Point(414, 41);
+            this.buttonLimpiar.Location = new System.Drawing.Point(483, 41);
             this.buttonLimpiar.Name = "buttonLimpiar";
             this.buttonLimpiar.Size = new System.Drawing.Size(75, 23);
             this.buttonLimpiar.TabIndex = 4;
@@ -81,7 +83,7 @@
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(523, 41);
+            this.buttonBuscar.Location = new System.Drawing.Point(587, 41);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(75, 23);
             this.buttonBuscar.TabIndex = 5;
@@ -99,11 +101,29 @@
             this.listBox1.Size = new System.Drawing.Size(662, 368);
             this.listBox1.TabIndex = 6;
             // 
+            // labelDoc
+            // 
+            this.labelDoc.AutoSize = true;
+            this.labelDoc.Location = new System.Drawing.Point(215, 25);
+            this.labelDoc.Name = "labelDoc";
+            this.labelDoc.Size = new System.Drawing.Size(82, 13);
+            this.labelDoc.TabIndex = 7;
+            this.labelDoc.Text = "DNI/Pasaporte:";
+            // 
+            // textBoxDoc
+            // 
+            this.textBoxDoc.Location = new System.Drawing.Point(308, 22);
+            this.textBoxDoc.Name = "textBoxDoc";
+            this.textBoxDoc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDoc.TabIndex = 8;
+            // 
             // PantallaListados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 491);
+            this.Controls.Add(this.textBoxDoc);
+            this.Controls.Add(this.labelDoc);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.buttonLimpiar);
@@ -127,5 +147,7 @@
         private System.Windows.Forms.Button buttonLimpiar;
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label labelDoc;
+        private System.Windows.Forms.TextBox textBoxDoc;
     }
 }

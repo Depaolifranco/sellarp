@@ -16,3 +16,6 @@ C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\P
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Funciones.PantallaFunciones.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Listados.PantallaListados.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Login.PantallaLogin.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\bin\Debug\PagoElectronico.exe
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\bin\Debug\PagoElectronico.pdb
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Transferencias.PantallaTransferencias.resources

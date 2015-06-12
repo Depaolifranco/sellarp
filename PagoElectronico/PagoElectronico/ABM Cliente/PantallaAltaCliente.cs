@@ -20,12 +20,12 @@ namespace PagoElectronico.ABM_Cliente
         {
             textBoxUsername.Text = "";
             textBoxPass.Text = "";
-            comboBoxRol.ResetText;
+            //comboBoxRol.ResetText;
             textBoxPregunta.Text = "";
             textBoxRespuesta.Text = "";
             textBoxNombre.Text = "";
             textBoxApellido.Text = "";
-            comboBoxTipoDoc.ResetText;
+            //comboBoxTipoDoc.ResetText;
             textBoxNumeroDoc.Text = "";
             textBoxMail.Text = "";
             textBoxPais.Text = "";

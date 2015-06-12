@@ -20,6 +20,7 @@ namespace PagoElectronico.Listados
         {
             textBoxUsername.Text = "";
             textBoxMail.Text = "";
+            textBoxDoc.Text = "";
         }
     }
 }

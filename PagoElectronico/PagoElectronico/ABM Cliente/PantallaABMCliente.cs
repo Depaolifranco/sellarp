@@ -25,7 +25,7 @@ namespace PagoElectronico.ABM_Cliente
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PagoElectronico.Listados.PantallaListado pantallaListado = new PagoElectronico.Listados.PantallaListado();
+            PagoElectronico.Listados.PantallaListados pantallaListado = new PagoElectronico.Listados.PantallaListados();
             pantallaListado.MdiParent = this;
             pantallaListado.Show();
         }
