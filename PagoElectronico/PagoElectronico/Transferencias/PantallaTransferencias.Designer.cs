@@ -72,6 +72,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(164, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // buttonBuscarCuenta
             // 
@@ -110,7 +111,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(108, 296);
+            this.buttonCancelar.Location = new System.Drawing.Point(147, 198);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
             this.buttonCancelar.TabIndex = 8;
@@ -119,18 +120,19 @@
             // 
             // buttonFinalizar
             // 
-            this.buttonFinalizar.Location = new System.Drawing.Point(271, 296);
+            this.buttonFinalizar.Location = new System.Drawing.Point(236, 198);
             this.buttonFinalizar.Name = "buttonFinalizar";
             this.buttonFinalizar.Size = new System.Drawing.Size(75, 23);
             this.buttonFinalizar.TabIndex = 9;
             this.buttonFinalizar.Text = "Finalizar";
             this.buttonFinalizar.UseVisualStyleBackColor = true;
+            this.buttonFinalizar.Click += new System.EventHandler(this.buttonFinalizar_Click);
             // 
             // PantallaTransferencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 434);
+            this.ClientSize = new System.Drawing.Size(481, 266);
             this.Controls.Add(this.buttonFinalizar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.comboBoxMoneda);
