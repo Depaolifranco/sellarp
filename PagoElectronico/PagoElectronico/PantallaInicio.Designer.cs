@@ -31,6 +31,7 @@
             this.labelMensaje = new System.Windows.Forms.Label();
             this.buttonIngresar = new System.Windows.Forms.Button();
             this.buttonRegistrarse = new System.Windows.Forms.Button();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // labelMensaje
@@ -62,11 +63,19 @@
             this.buttonRegistrarse.UseVisualStyleBackColor = true;
             this.buttonRegistrarse.Click += new System.EventHandler(this.buttonRegistrarse_Click);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(72, 196);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 3;
+            // 
             // PantallaInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.buttonRegistrarse);
             this.Controls.Add(this.buttonIngresar);
             this.Controls.Add(this.labelMensaje);
@@ -83,6 +92,7 @@
         private System.Windows.Forms.Label labelMensaje;
         private System.Windows.Forms.Button buttonIngresar;
         private System.Windows.Forms.Button buttonRegistrarse;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
 

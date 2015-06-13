@@ -22,5 +22,38 @@ namespace PagoElectronico.Funciones
             cliente.Show();
             this.Hide();
         }
+
+        private void buttonListados_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.Listados.ListadoEstadistico listados = new PagoElectronico.Listados.ListadoEstadistico();
+            listados.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.ABM_Rol.FormABMRol pantallaRol = new PagoElectronico.ABM_Rol.FormABMRol();
+            pantallaRol.Show();
+            this.Hide();
+        }
+
+        private void buttonTransferencias_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.Transferencias.PantallaTransferencias tranf = new PagoElectronico.Transferencias.PantallaTransferencias();
+            tranf.Show();
+            this.Hide();
+        }
+
+        private void buttonConsulta_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonRetiros_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.Retiros.PantallaRetiros retiros = new PagoElectronico.Retiros.PantallaRetiros();
+            retiros.Show();
+            this.Hide();
+        }
     }
 }

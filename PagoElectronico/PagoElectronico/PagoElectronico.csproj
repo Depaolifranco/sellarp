@@ -69,53 +69,11 @@
     <Compile Include="ABM Cliente\PantallaAltaCliente.Designer.cs">
       <DependentUpon>PantallaAltaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM Cuenta\Alta de cuenta Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM Cuenta\Alta de cuenta Admin.Designer.cs">
-      <DependentUpon>Alta de cuenta Admin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM Cuenta\Alta de cuenta Cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM Cuenta\Alta de cuenta Cliente.Designer.cs">
-      <DependentUpon>Alta de cuenta Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM Cuenta\Busqueda de User.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM Cuenta\Busqueda de User.Designer.cs">
-      <DependentUpon>Busqueda de User.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM Cuenta\Formulario de Modificacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM Cuenta\Formulario de Modificacion.Designer.cs">
-      <DependentUpon>Formulario de Modificacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM Cuenta\Listado Modificacion de Tipo de Cta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM Cuenta\Listado Modificacion de Tipo de Cta.Designer.cs">
-      <DependentUpon>Listado Modificacion de Tipo de Cta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM Cuenta\Modificacion Exitosa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM Cuenta\Modificacion Exitosa.Designer.cs">
-      <DependentUpon>Modificacion Exitosa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM Cuenta\No Selecciono Cuenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ABM Cuenta\No Selecciono Cuenta.Designer.cs">
-      <DependentUpon>No Selecciono Cuenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ABM Rol\Form1.cs">
+    <Compile Include="ABM Rol\PantallaABMRol.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ABM Rol\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+      <DependentUpon>PantallaABMRol.cs</DependentUpon>
     </Compile>
     <Compile Include="ABM de Usuario\Form1.cs">
       <SubType>Form</SubType>
@@ -129,6 +87,12 @@
     <Compile Include="ABM Cliente\PantallaABMCliente.Designer.cs">
       <DependentUpon>PantallaABMCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM Rol\PantallaNuevoRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Rol\PantallaNuevoRol.Designer.cs">
+      <DependentUpon>PantallaNuevoRol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consulta Saldos\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +104,12 @@
     </Compile>
     <Compile Include="Funciones\PantallaFunciones.Designer.cs">
       <DependentUpon>PantallaFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listados\ListadoEstadistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listados\ListadoEstadistico.Designer.cs">
+      <DependentUpon>ListadoEstadistico.cs</DependentUpon>
     </Compile>
     <Compile Include="Listados\PantallaListados.cs">
       <SubType>Form</SubType>
@@ -164,11 +134,9 @@
     <Compile Include="Transferencias\PantallaTransferencias.Designer.cs">
       <DependentUpon>PantallaTransferencias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Retiros\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Retiros\PantallaRetiros.cs" />
     <Compile Include="Retiros\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+      <DependentUpon>PantallaRetiros.cs</DependentUpon>
     </Compile>
     <Compile Include="Depositos\Form1.cs">
       <SubType>Form</SubType>
@@ -198,36 +166,20 @@
       <DependentUpon>PantallaAltaCliente.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM Cuenta\Alta de cuenta Admin.resx">
-      <DependentUpon>Alta de cuenta Admin.cs</DependentUpon>
+    <EmbeddedResource Include="ABM Rol\Form1.resx">
+      <DependentUpon>PantallaABMRol.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM Cuenta\Alta de cuenta Cliente.resx">
-      <DependentUpon>Alta de cuenta Cliente.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM Cuenta\Busqueda de User.resx">
-      <DependentUpon>Busqueda de User.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM Cuenta\Formulario de Modificacion.resx">
-      <DependentUpon>Formulario de Modificacion.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM Cuenta\Listado Modificacion de Tipo de Cta.resx">
-      <DependentUpon>Listado Modificacion de Tipo de Cta.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM Cuenta\Modificacion Exitosa.resx">
-      <DependentUpon>Modificacion Exitosa.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ABM Cuenta\No Selecciono Cuenta.resx">
-      <DependentUpon>No Selecciono Cuenta.cs</DependentUpon>
+    <EmbeddedResource Include="ABM Rol\PantallaNuevoRol.resx">
+      <DependentUpon>PantallaNuevoRol.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Funciones\PantallaFunciones.resx">
       <DependentUpon>PantallaFunciones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listados\ListadoEstadistico.resx">
+      <DependentUpon>ListadoEstadistico.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Listados\PantallaListados.resx">
@@ -245,6 +197,10 @@
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Retiros\PantallaRetiros.resx">
+      <DependentUpon>PantallaRetiros.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Transferencias\PantallaTransferencias.resx">
       <DependentUpon>PantallaTransferencias.cs</DependentUpon>

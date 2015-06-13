@@ -37,6 +37,7 @@
             this.buttonRetiros = new System.Windows.Forms.Button();
             this.buttonFacturacion = new System.Windows.Forms.Button();
             this.buttonListados = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonABMCliente
@@ -75,6 +76,7 @@
             this.buttonConsulta.TabIndex = 3;
             this.buttonConsulta.Text = "Consulta de saldo";
             this.buttonConsulta.UseVisualStyleBackColor = true;
+            this.buttonConsulta.Click += new System.EventHandler(this.buttonConsulta_Click);
             // 
             // buttonDeposito
             // 
@@ -93,6 +95,7 @@
             this.buttonTransferencias.TabIndex = 5;
             this.buttonTransferencias.Text = "Transferencias";
             this.buttonTransferencias.UseVisualStyleBackColor = true;
+            this.buttonTransferencias.Click += new System.EventHandler(this.buttonTransferencias_Click);
             // 
             // buttonRetiros
             // 
@@ -102,10 +105,11 @@
             this.buttonRetiros.TabIndex = 6;
             this.buttonRetiros.Text = "Retiros";
             this.buttonRetiros.UseVisualStyleBackColor = true;
+            this.buttonRetiros.Click += new System.EventHandler(this.buttonRetiros_Click);
             // 
             // buttonFacturacion
             // 
-            this.buttonFacturacion.Location = new System.Drawing.Point(46, 156);
+            this.buttonFacturacion.Location = new System.Drawing.Point(46, 194);
             this.buttonFacturacion.Name = "buttonFacturacion";
             this.buttonFacturacion.Size = new System.Drawing.Size(134, 23);
             this.buttonFacturacion.TabIndex = 7;
@@ -114,18 +118,30 @@
             // 
             // buttonListados
             // 
-            this.buttonListados.Location = new System.Drawing.Point(46, 194);
+            this.buttonListados.Location = new System.Drawing.Point(46, 232);
             this.buttonListados.Name = "buttonListados";
             this.buttonListados.Size = new System.Drawing.Size(134, 23);
             this.buttonListados.TabIndex = 8;
             this.buttonListados.Text = "Listados";
             this.buttonListados.UseVisualStyleBackColor = true;
+            this.buttonListados.Click += new System.EventHandler(this.buttonListados_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(46, 156);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "ABM Rol";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // PantallaFunciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 356);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonListados);
             this.Controls.Add(this.buttonFacturacion);
             this.Controls.Add(this.buttonRetiros);
@@ -152,5 +168,6 @@
         private System.Windows.Forms.Button buttonRetiros;
         private System.Windows.Forms.Button buttonFacturacion;
         private System.Windows.Forms.Button buttonListados;
+        private System.Windows.Forms.Button button1;
     }
 }
