@@ -34,9 +34,10 @@
             this.labelMail = new System.Windows.Forms.Label();
             this.buttonLimpiar = new System.Windows.Forms.Button();
             this.buttonBuscar = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.labelDoc = new System.Windows.Forms.Label();
             this.textBoxDoc = new System.Windows.Forms.TextBox();
+            this.tablaListado = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaListado)).BeginInit();
             this.SuspendLayout();
             // 
             // labelUsername
@@ -90,17 +91,6 @@
             this.buttonBuscar.Text = "Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
             // 
-            // listBox1
-            // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(29, 99);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(662, 368);
-            this.listBox1.TabIndex = 6;
-            // 
             // labelDoc
             // 
             this.labelDoc.AutoSize = true;
@@ -117,14 +107,22 @@
             this.textBoxDoc.Size = new System.Drawing.Size(100, 20);
             this.textBoxDoc.TabIndex = 8;
             // 
+            // tablaListado
+            // 
+            this.tablaListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaListado.Location = new System.Drawing.Point(29, 99);
+            this.tablaListado.Name = "tablaListado";
+            this.tablaListado.Size = new System.Drawing.Size(633, 367);
+            this.tablaListado.TabIndex = 9;
+            // 
             // PantallaBuscarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 491);
+            this.ClientSize = new System.Drawing.Size(694, 491);
+            this.Controls.Add(this.tablaListado);
             this.Controls.Add(this.textBoxDoc);
             this.Controls.Add(this.labelDoc);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.buttonLimpiar);
             this.Controls.Add(this.labelMail);
@@ -134,6 +132,7 @@
             this.Name = "PantallaBuscarClientes";
             this.Text = "Listado de clientes";
             this.Load += new System.EventHandler(this.PantallaListados_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tablaListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,8 +146,8 @@
         private System.Windows.Forms.Label labelMail;
         private System.Windows.Forms.Button buttonLimpiar;
         private System.Windows.Forms.Button buttonBuscar;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label labelDoc;
         private System.Windows.Forms.TextBox textBoxDoc;
+        private System.Windows.Forms.DataGridView tablaListado;
     }
 }

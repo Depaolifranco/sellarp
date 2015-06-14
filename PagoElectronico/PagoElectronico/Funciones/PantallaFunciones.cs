@@ -14,7 +14,10 @@ namespace PagoElectronico.Funciones
         public PantallaFunciones()
         {
             InitializeComponent();
+            //FiltrarFuncionesDeRol();
         }
+
+
 
         private void buttonABMCliente_Click(object sender, EventArgs e)
         {
@@ -54,6 +57,11 @@ namespace PagoElectronico.Funciones
             PagoElectronico.Retiros.PantallaRetiros retiros = new PagoElectronico.Retiros.PantallaRetiros();
             retiros.Show();
             this.Hide();
+        }
+
+        private void PantallaFunciones_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

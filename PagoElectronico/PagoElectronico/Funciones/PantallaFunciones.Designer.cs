@@ -37,7 +37,7 @@
             this.buttonRetiros = new System.Windows.Forms.Button();
             this.buttonFacturacion = new System.Windows.Forms.Button();
             this.buttonListados = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonABMRol = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonABMCliente
@@ -48,6 +48,7 @@
             this.buttonABMCliente.TabIndex = 0;
             this.buttonABMCliente.Text = "ABM Cliente";
             this.buttonABMCliente.UseVisualStyleBackColor = true;
+            this.buttonABMCliente.Visible = false;
             this.buttonABMCliente.Click += new System.EventHandler(this.buttonABMCliente_Click);
             // 
             // buttonABMCuenta
@@ -58,6 +59,7 @@
             this.buttonABMCuenta.TabIndex = 1;
             this.buttonABMCuenta.Text = "ABM Cuenta";
             this.buttonABMCuenta.UseVisualStyleBackColor = true;
+            this.buttonABMCuenta.Visible = false;
             // 
             // buttonABMUsuario
             // 
@@ -67,6 +69,7 @@
             this.buttonABMUsuario.TabIndex = 2;
             this.buttonABMUsuario.Text = "ABM Usuario";
             this.buttonABMUsuario.UseVisualStyleBackColor = true;
+            this.buttonABMUsuario.Visible = false;
             // 
             // buttonConsulta
             // 
@@ -76,6 +79,7 @@
             this.buttonConsulta.TabIndex = 3;
             this.buttonConsulta.Text = "Consulta de saldo";
             this.buttonConsulta.UseVisualStyleBackColor = true;
+            this.buttonConsulta.Visible = false;
             this.buttonConsulta.Click += new System.EventHandler(this.buttonConsulta_Click);
             // 
             // buttonDeposito
@@ -86,6 +90,7 @@
             this.buttonDeposito.TabIndex = 4;
             this.buttonDeposito.Text = "Depositos";
             this.buttonDeposito.UseVisualStyleBackColor = true;
+            this.buttonDeposito.Visible = false;
             // 
             // buttonTransferencias
             // 
@@ -95,6 +100,7 @@
             this.buttonTransferencias.TabIndex = 5;
             this.buttonTransferencias.Text = "Transferencias";
             this.buttonTransferencias.UseVisualStyleBackColor = true;
+            this.buttonTransferencias.Visible = false;
             this.buttonTransferencias.Click += new System.EventHandler(this.buttonTransferencias_Click);
             // 
             // buttonRetiros
@@ -105,6 +111,7 @@
             this.buttonRetiros.TabIndex = 6;
             this.buttonRetiros.Text = "Retiros";
             this.buttonRetiros.UseVisualStyleBackColor = true;
+            this.buttonRetiros.Visible = false;
             this.buttonRetiros.Click += new System.EventHandler(this.buttonRetiros_Click);
             // 
             // buttonFacturacion
@@ -115,6 +122,7 @@
             this.buttonFacturacion.TabIndex = 7;
             this.buttonFacturacion.Text = "Facturación";
             this.buttonFacturacion.UseVisualStyleBackColor = true;
+            this.buttonFacturacion.Visible = false;
             // 
             // buttonListados
             // 
@@ -124,24 +132,26 @@
             this.buttonListados.TabIndex = 8;
             this.buttonListados.Text = "Listados";
             this.buttonListados.UseVisualStyleBackColor = true;
+            this.buttonListados.Visible = false;
             this.buttonListados.Click += new System.EventHandler(this.buttonListados_Click);
             // 
-            // button1
+            // buttonABMRol
             // 
-            this.button1.Location = new System.Drawing.Point(46, 156);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "ABM Rol";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonABMRol.Location = new System.Drawing.Point(46, 156);
+            this.buttonABMRol.Name = "buttonABMRol";
+            this.buttonABMRol.Size = new System.Drawing.Size(134, 23);
+            this.buttonABMRol.TabIndex = 9;
+            this.buttonABMRol.Text = "ABM Rol";
+            this.buttonABMRol.UseVisualStyleBackColor = true;
+            this.buttonABMRol.Visible = false;
+            this.buttonABMRol.Click += new System.EventHandler(this.button1_Click);
             // 
             // PantallaFunciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 356);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonABMRol);
             this.Controls.Add(this.buttonListados);
             this.Controls.Add(this.buttonFacturacion);
             this.Controls.Add(this.buttonRetiros);
@@ -153,21 +163,22 @@
             this.Controls.Add(this.buttonABMCliente);
             this.Name = "PantallaFunciones";
             this.Text = "Funciones";
+            this.Load += new System.EventHandler(this.PantallaFunciones_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonABMCliente;
-        private System.Windows.Forms.Button buttonABMCuenta;
-        private System.Windows.Forms.Button buttonABMUsuario;
-        private System.Windows.Forms.Button buttonConsulta;
-        private System.Windows.Forms.Button buttonDeposito;
-        private System.Windows.Forms.Button buttonTransferencias;
-        private System.Windows.Forms.Button buttonRetiros;
-        private System.Windows.Forms.Button buttonFacturacion;
-        private System.Windows.Forms.Button buttonListados;
-        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button buttonABMCuenta;
+        public System.Windows.Forms.Button buttonDeposito;
+        public System.Windows.Forms.Button buttonFacturacion;
+        public System.Windows.Forms.Button buttonListados;
+        public System.Windows.Forms.Button buttonABMCliente;
+        public System.Windows.Forms.Button buttonABMUsuario;
+        public System.Windows.Forms.Button buttonConsulta;
+        public System.Windows.Forms.Button buttonTransferencias;
+        public System.Windows.Forms.Button buttonRetiros;
+        public System.Windows.Forms.Button buttonABMRol;
     }
 }

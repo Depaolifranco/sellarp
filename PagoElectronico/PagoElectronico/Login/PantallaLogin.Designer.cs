@@ -103,6 +103,7 @@
             this.Controls.Add(this.labelMensaje);
             this.Name = "PantallaLogin";
             this.Text = "Ingresar";
+            this.Load += new System.EventHandler(this.PantallaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

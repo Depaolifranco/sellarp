@@ -1,6 +1,6 @@
 ﻿namespace PagoElectronico.Login
 {
-    partial class PantallaElejirRol
+    partial class PantallaElegirRol
     {
         /// <summary>
         /// Required designer variable.

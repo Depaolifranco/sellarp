@@ -40,5 +40,15 @@ namespace PagoElectronico.ABM_Cliente
         {
 
         }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void buttonGuardar_Click(object sender, EventArgs e)
+        {
+            maskedTextBoxFechaCreacion.Text = DateTime.Now.ToString();
+        }
     }
 }

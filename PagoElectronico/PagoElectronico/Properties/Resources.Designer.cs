@@ -59,5 +59,19 @@ namespace PagoElectronico.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap pago_electronico {
+            get {
+                object obj = ResourceManager.GetObject("pago electronico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap utnba {
+            get {
+                object obj = ResourceManager.GetObject("utnba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

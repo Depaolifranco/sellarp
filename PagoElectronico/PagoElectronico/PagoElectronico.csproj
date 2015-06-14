@@ -123,11 +123,11 @@
     <Compile Include="Facturacion\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\PantallaElejirRol.cs">
+    <Compile Include="Login\PantallaElegirRol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\PantallaElejirRol.Designer.cs">
-      <DependentUpon>PantallaElejirRol.cs</DependentUpon>
+    <Compile Include="Login\PantallaElegirRol.Designer.cs">
+      <DependentUpon>PantallaElegirRol.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
@@ -197,8 +197,8 @@
       <DependentUpon>PantallaBuscarCliente.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\PantallaElejirRol.resx">
-      <DependentUpon>PantallaElejirRol.cs</DependentUpon>
+    <EmbeddedResource Include="Login\PantallaElegirRol.resx">
+      <DependentUpon>PantallaElegirRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\PantallaLogin.resx">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
@@ -250,6 +250,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utnba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pago electronico.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

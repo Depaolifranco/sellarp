@@ -38,9 +38,7 @@
             this.labelRespuesta = new System.Windows.Forms.Label();
             this.textBoxRespuesta = new System.Windows.Forms.TextBox();
             this.labelFechaCreacion = new System.Windows.Forms.Label();
-            this.textBoxFechaCreacion = new System.Windows.Forms.TextBox();
             this.labelFechaModificacion = new System.Windows.Forms.Label();
-            this.textBoxFechaModif = new System.Windows.Forms.TextBox();
             this.labelNombre = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
@@ -67,6 +65,8 @@
             this.buttonLimpiar = new System.Windows.Forms.Button();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.comboBoxRol = new System.Windows.Forms.ComboBox();
+            this.maskedTextBoxFechaCreacion = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxFechaModif = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // labelUsername
@@ -151,14 +151,6 @@
             this.labelFechaCreacion.TabIndex = 10;
             this.labelFechaCreacion.Text = "Fecha creación:";
             // 
-            // textBoxFechaCreacion
-            // 
-            this.textBoxFechaCreacion.Location = new System.Drawing.Point(421, 32);
-            this.textBoxFechaCreacion.Name = "textBoxFechaCreacion";
-            this.textBoxFechaCreacion.ReadOnly = true;
-            this.textBoxFechaCreacion.Size = new System.Drawing.Size(121, 20);
-            this.textBoxFechaCreacion.TabIndex = 11;
-            // 
             // labelFechaModificacion
             // 
             this.labelFechaModificacion.AutoSize = true;
@@ -167,14 +159,6 @@
             this.labelFechaModificacion.Size = new System.Drawing.Size(102, 13);
             this.labelFechaModificacion.TabIndex = 12;
             this.labelFechaModificacion.Text = "Fecha modificación:";
-            // 
-            // textBoxFechaModif
-            // 
-            this.textBoxFechaModif.Location = new System.Drawing.Point(421, 58);
-            this.textBoxFechaModif.Name = "textBoxFechaModif";
-            this.textBoxFechaModif.ReadOnly = true;
-            this.textBoxFechaModif.Size = new System.Drawing.Size(121, 20);
-            this.textBoxFechaModif.TabIndex = 13;
             // 
             // labelNombre
             // 
@@ -384,6 +368,7 @@
             this.buttonGuardar.TabIndex = 38;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // comboBoxRol
             // 
@@ -397,11 +382,34 @@
             this.comboBoxRol.Size = new System.Drawing.Size(121, 21);
             this.comboBoxRol.TabIndex = 39;
             // 
+            // maskedTextBoxFechaCreacion
+            // 
+            this.maskedTextBoxFechaCreacion.Location = new System.Drawing.Point(421, 32);
+            this.maskedTextBoxFechaCreacion.Mask = "00/00/0000";
+            this.maskedTextBoxFechaCreacion.Name = "maskedTextBoxFechaCreacion";
+            this.maskedTextBoxFechaCreacion.ReadOnly = true;
+            this.maskedTextBoxFechaCreacion.Size = new System.Drawing.Size(121, 20);
+            this.maskedTextBoxFechaCreacion.TabIndex = 40;
+            this.maskedTextBoxFechaCreacion.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBoxFechaCreacion.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // maskedTextBoxFechaModif
+            // 
+            this.maskedTextBoxFechaModif.Enabled = false;
+            this.maskedTextBoxFechaModif.Location = new System.Drawing.Point(421, 58);
+            this.maskedTextBoxFechaModif.Mask = "00/00/0000";
+            this.maskedTextBoxFechaModif.Name = "maskedTextBoxFechaModif";
+            this.maskedTextBoxFechaModif.Size = new System.Drawing.Size(121, 20);
+            this.maskedTextBoxFechaModif.TabIndex = 41;
+            this.maskedTextBoxFechaModif.ValidatingType = typeof(System.DateTime);
+            // 
             // PantallaAltaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 525);
+            this.Controls.Add(this.maskedTextBoxFechaModif);
+            this.Controls.Add(this.maskedTextBoxFechaCreacion);
             this.Controls.Add(this.comboBoxRol);
             this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.buttonLimpiar);
@@ -428,9 +436,7 @@
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.labelNombre);
-            this.Controls.Add(this.textBoxFechaModif);
             this.Controls.Add(this.labelFechaModificacion);
-            this.Controls.Add(this.textBoxFechaCreacion);
             this.Controls.Add(this.labelFechaCreacion);
             this.Controls.Add(this.textBoxRespuesta);
             this.Controls.Add(this.labelRespuesta);
@@ -461,9 +467,7 @@
         private System.Windows.Forms.Label labelRespuesta;
         private System.Windows.Forms.TextBox textBoxRespuesta;
         private System.Windows.Forms.Label labelFechaCreacion;
-        private System.Windows.Forms.TextBox textBoxFechaCreacion;
         private System.Windows.Forms.Label labelFechaModificacion;
-        private System.Windows.Forms.TextBox textBoxFechaModif;
         private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxApellido;
@@ -490,5 +494,7 @@
         private System.Windows.Forms.Button buttonLimpiar;
         private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.ComboBox comboBoxRol;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxFechaCreacion;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxFechaModif;
     }
 }

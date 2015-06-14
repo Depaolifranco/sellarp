@@ -32,5 +32,10 @@ namespace PagoElectronico
         {
 
         }
+
+        private void labelPagoElec_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

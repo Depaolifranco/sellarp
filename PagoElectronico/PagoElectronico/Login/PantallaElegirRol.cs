@@ -9,11 +9,17 @@ using System.Windows.Forms;
 
 namespace PagoElectronico.Login
 {
-    public partial class PantallaElejirRol : Form
+    public partial class PantallaElegirRol : Form
     {
-        public PantallaElejirRol()
+        public PantallaElegirRol()
         {
             InitializeComponent();
+            LlenarListaDeRoles();
+        }
+
+        void LlenarListaDeRoles()
+        {
+
         }
 
         private void PantallaElejirRol_Load(object sender, EventArgs e)
