@@ -60,12 +60,11 @@ namespace PagoElectronico.Login
                     if (textBoxUser.Text == "user")
                     {
                         PagoElectronico.Funciones.PantallaFunciones funcionesUser = new PagoElectronico.Funciones.PantallaFunciones();
-                       /* funcionesUser.buttonConsulta.Visible = true;
+                        funcionesUser.buttonConsulta.Visible = true;
                         funcionesUser.buttonDeposito.Visible = true;
-                        funcionesUser.buttonFacturacion.Visible = true;
                         funcionesUser.buttonRetiros.Visible = true;
                         funcionesUser.buttonTransferencias.Visible = true;
-                        */
+                        
                         funcionesUser.Show();
                         this.Hide();
                     }
@@ -74,6 +73,16 @@ namespace PagoElectronico.Login
                         MessageBox.Show("Usuario incorrecto");
                     }
                 }
+        }
+
+        private void textBoxPass_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void PantallaLogin_Load(object sender, EventArgs e)
+        {
+
         }
             
           //  catch (Exception ex)
@@ -124,15 +133,6 @@ namespace PagoElectronico.Login
              */
         }
         
-        
-        private void textBoxPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PantallaLogin_Load(object sender, EventArgs e)
-        {
-
-        }
+     
 }
     

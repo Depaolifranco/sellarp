@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaLogin));
             this.labelMensaje = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.labelPass = new System.Windows.Forms.Label();
@@ -101,6 +102,7 @@
             this.Controls.Add(this.labelPass);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.labelMensaje);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaLogin";
             this.Text = "Ingresar";
             this.Load += new System.EventHandler(this.PantallaLogin_Load);

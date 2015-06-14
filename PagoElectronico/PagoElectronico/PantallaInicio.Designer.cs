@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaInicio));
             this.labelMensaje = new System.Windows.Forms.Label();
             this.buttonIngresar = new System.Windows.Forms.Button();
             this.buttonRegistrarse = new System.Windows.Forms.Button();
@@ -111,6 +112,7 @@
             this.Controls.Add(this.buttonRegistrarse);
             this.Controls.Add(this.buttonIngresar);
             this.Controls.Add(this.labelMensaje);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaInicio";
             this.Text = "Pago Electronico";
             this.Load += new System.EventHandler(this.Form1_Load);
