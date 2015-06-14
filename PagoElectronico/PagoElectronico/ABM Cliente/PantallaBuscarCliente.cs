@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PagoElectronico.Listados
+namespace PagoElectronico.ABM_Cliente
 {
-    public partial class PantallaListados : Form
+    public partial class PantallaBuscarClientes : Form
     {
-        public PantallaListados()
+        public PantallaBuscarClientes()
         {
             InitializeComponent();
         }
@@ -21,6 +21,11 @@ namespace PagoElectronico.Listados
             textBoxUsername.Text = "";
             textBoxMail.Text = "";
             textBoxDoc.Text = "";
+        }
+
+        private void PantallaListados_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,166 +28,167 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.comboBoxCuenta = new System.Windows.Forms.ComboBox();
+            this.labelCuenta = new System.Windows.Forms.Label();
+            this.labelTipoDoc = new System.Windows.Forms.Label();
+            this.textBoxNumeroDoc = new System.Windows.Forms.TextBox();
+            this.comboBoxTipoDoc = new System.Windows.Forms.ComboBox();
+            this.labelNumeroDoc = new System.Windows.Forms.Label();
+            this.labelImporte = new System.Windows.Forms.Label();
+            this.textBoxImporte = new System.Windows.Forms.TextBox();
+            this.labelBanco = new System.Windows.Forms.Label();
+            this.comboBoxBanco = new System.Windows.Forms.ComboBox();
+            this.labelFecha = new System.Windows.Forms.Label();
+            this.textBoxFecha = new System.Windows.Forms.TextBox();
+            this.buttonFinalizar = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // comboBoxCuenta
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(81, 35);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
+            this.comboBoxCuenta.FormattingEnabled = true;
+            this.comboBoxCuenta.Location = new System.Drawing.Point(81, 35);
+            this.comboBoxCuenta.Name = "comboBoxCuenta";
+            this.comboBoxCuenta.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCuenta.TabIndex = 0;
             // 
-            // label1
+            // labelCuenta
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cuenta:";
+            this.labelCuenta.AutoSize = true;
+            this.labelCuenta.Location = new System.Drawing.Point(31, 38);
+            this.labelCuenta.Name = "labelCuenta";
+            this.labelCuenta.Size = new System.Drawing.Size(44, 13);
+            this.labelCuenta.TabIndex = 1;
+            this.labelCuenta.Text = "Cuenta:";
             // 
-            // label2
+            // labelTipoDoc
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tipo Documento:";
+            this.labelTipoDoc.AutoSize = true;
+            this.labelTipoDoc.Location = new System.Drawing.Point(31, 85);
+            this.labelTipoDoc.Name = "labelTipoDoc";
+            this.labelTipoDoc.Size = new System.Drawing.Size(89, 13);
+            this.labelTipoDoc.TabIndex = 2;
+            this.labelTipoDoc.Text = "Tipo Documento:";
             // 
-            // textBox1
+            // textBoxNumeroDoc
             // 
-            this.textBox1.Location = new System.Drawing.Point(326, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBoxNumeroDoc.Location = new System.Drawing.Point(270, 82);
+            this.textBoxNumeroDoc.Name = "textBoxNumeroDoc";
+            this.textBoxNumeroDoc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumeroDoc.TabIndex = 3;
             // 
-            // comboBox2
+            // comboBoxTipoDoc
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxTipoDoc.FormattingEnabled = true;
+            this.comboBoxTipoDoc.Items.AddRange(new object[] {
             "DNI",
             "Pasaporte"});
-            this.comboBox2.Location = new System.Drawing.Point(141, 82);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(61, 21);
-            this.comboBox2.TabIndex = 4;
+            this.comboBoxTipoDoc.Location = new System.Drawing.Point(141, 82);
+            this.comboBoxTipoDoc.Name = "comboBoxTipoDoc";
+            this.comboBoxTipoDoc.Size = new System.Drawing.Size(61, 21);
+            this.comboBoxTipoDoc.TabIndex = 4;
             // 
-            // label3
+            // labelNumeroDoc
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(273, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Numero:";
+            this.labelNumeroDoc.AutoSize = true;
+            this.labelNumeroDoc.Location = new System.Drawing.Point(217, 85);
+            this.labelNumeroDoc.Name = "labelNumeroDoc";
+            this.labelNumeroDoc.Size = new System.Drawing.Size(47, 13);
+            this.labelNumeroDoc.TabIndex = 5;
+            this.labelNumeroDoc.Text = "Numero:";
             // 
-            // label4
+            // labelImporte
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 127);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Importe";
+            this.labelImporte.AutoSize = true;
+            this.labelImporte.Location = new System.Drawing.Point(31, 127);
+            this.labelImporte.Name = "labelImporte";
+            this.labelImporte.Size = new System.Drawing.Size(45, 13);
+            this.labelImporte.TabIndex = 6;
+            this.labelImporte.Text = "Importe:";
             // 
-            // textBox2
+            // textBoxImporte
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
+            this.textBoxImporte.Location = new System.Drawing.Point(102, 124);
+            this.textBoxImporte.Name = "textBoxImporte";
+            this.textBoxImporte.Size = new System.Drawing.Size(100, 20);
+            this.textBoxImporte.TabIndex = 7;
             // 
-            // label5
+            // labelBanco
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 174);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Banco:";
+            this.labelBanco.AutoSize = true;
+            this.labelBanco.Location = new System.Drawing.Point(31, 174);
+            this.labelBanco.Name = "labelBanco";
+            this.labelBanco.Size = new System.Drawing.Size(41, 13);
+            this.labelBanco.TabIndex = 8;
+            this.labelBanco.Text = "Banco:";
             // 
-            // comboBox3
+            // comboBoxBanco
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxBanco.FormattingEnabled = true;
+            this.comboBoxBanco.Items.AddRange(new object[] {
             "Ciudad",
             "Nacion"});
-            this.comboBox3.Location = new System.Drawing.Point(102, 171);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 9;
+            this.comboBoxBanco.Location = new System.Drawing.Point(81, 171);
+            this.comboBoxBanco.Name = "comboBoxBanco";
+            this.comboBoxBanco.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxBanco.TabIndex = 9;
             // 
-            // label6
+            // labelFecha
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 220);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Fecha:";
+            this.labelFecha.AutoSize = true;
+            this.labelFecha.Location = new System.Drawing.Point(31, 220);
+            this.labelFecha.Name = "labelFecha";
+            this.labelFecha.Size = new System.Drawing.Size(40, 13);
+            this.labelFecha.TabIndex = 10;
+            this.labelFecha.Text = "Fecha:";
             // 
-            // textBox3
+            // textBoxFecha
             // 
-            this.textBox3.Location = new System.Drawing.Point(102, 217);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
+            this.textBoxFecha.Location = new System.Drawing.Point(102, 217);
+            this.textBoxFecha.Name = "textBoxFecha";
+            this.textBoxFecha.ReadOnly = true;
+            this.textBoxFecha.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFecha.TabIndex = 11;
             // 
-            // button1
+            // buttonFinalizar
             // 
-            this.button1.Location = new System.Drawing.Point(326, 299);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Finalizar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonFinalizar.Location = new System.Drawing.Point(230, 281);
+            this.buttonFinalizar.Name = "buttonFinalizar";
+            this.buttonFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.buttonFinalizar.TabIndex = 12;
+            this.buttonFinalizar.Text = "Finalizar";
+            this.buttonFinalizar.UseVisualStyleBackColor = true;
+            this.buttonFinalizar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(181, 299);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Location = new System.Drawing.Point(81, 281);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelar.TabIndex = 13;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // PantallaRetiros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 491);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(426, 349);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonFinalizar);
+            this.Controls.Add(this.textBoxFecha);
+            this.Controls.Add(this.labelFecha);
+            this.Controls.Add(this.comboBoxBanco);
+            this.Controls.Add(this.labelBanco);
+            this.Controls.Add(this.textBoxImporte);
+            this.Controls.Add(this.labelImporte);
+            this.Controls.Add(this.labelNumeroDoc);
+            this.Controls.Add(this.comboBoxTipoDoc);
+            this.Controls.Add(this.textBoxNumeroDoc);
+            this.Controls.Add(this.labelTipoDoc);
+            this.Controls.Add(this.labelCuenta);
+            this.Controls.Add(this.comboBoxCuenta);
             this.Name = "PantallaRetiros";
             this.Text = "Retiro";
             this.ResumeLayout(false);
@@ -197,19 +198,19 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBoxCuenta;
+        private System.Windows.Forms.Label labelCuenta;
+        private System.Windows.Forms.Label labelTipoDoc;
+        private System.Windows.Forms.TextBox textBoxNumeroDoc;
+        private System.Windows.Forms.ComboBox comboBoxTipoDoc;
+        private System.Windows.Forms.Label labelNumeroDoc;
+        private System.Windows.Forms.Label labelImporte;
+        private System.Windows.Forms.TextBox textBoxImporte;
+        private System.Windows.Forms.Label labelBanco;
+        private System.Windows.Forms.ComboBox comboBoxBanco;
+        private System.Windows.Forms.Label labelFecha;
+        private System.Windows.Forms.TextBox textBoxFecha;
+        private System.Windows.Forms.Button buttonFinalizar;
+        private System.Windows.Forms.Button buttonCancelar;
     }
 }

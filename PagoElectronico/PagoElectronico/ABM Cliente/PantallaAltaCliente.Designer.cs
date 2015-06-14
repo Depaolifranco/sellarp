@@ -443,6 +443,7 @@
             this.Controls.Add(this.labelUsername);
             this.Name = "PantallaAltaCliente";
             this.Text = "PantallaAltaCliente";
+            this.Load += new System.EventHandler(this.PantallaAltaCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

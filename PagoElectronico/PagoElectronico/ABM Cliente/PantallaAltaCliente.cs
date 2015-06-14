@@ -35,5 +35,10 @@ namespace PagoElectronico.ABM_Cliente
             textBoxLocalidad.Text = "";
             textBoxNacionalidad.Text = "";
         }
+
+        private void PantallaAltaCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

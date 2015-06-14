@@ -1,6 +1,6 @@
-﻿namespace PagoElectronico.Listados
+﻿namespace PagoElectronico.ABM_Cliente
 {
-    partial class PantallaListados
+    partial class PantallaBuscarClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -117,7 +117,7 @@
             this.textBoxDoc.Size = new System.Drawing.Size(100, 20);
             this.textBoxDoc.TabIndex = 8;
             // 
-            // PantallaListados
+            // PantallaBuscarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,8 +131,9 @@
             this.Controls.Add(this.textBoxMail);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.labelUsername);
-            this.Name = "PantallaListados";
+            this.Name = "PantallaBuscarClientes";
             this.Text = "Listado de clientes";
+            this.Load += new System.EventHandler(this.PantallaListados_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -18,7 +18,14 @@ namespace PagoElectronico.Retiros
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("nro cheque, fecha, importe");
+            
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            PagoElectronico.Funciones.PantallaFunciones funciones = new PagoElectronico.Funciones.PantallaFunciones();
+            funciones.Show();
         }
     }
 }

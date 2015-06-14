@@ -21,13 +21,14 @@ namespace PagoElectronico.ABM_Cliente
             PantallaAltaCliente pantallaCrear = new PantallaAltaCliente();
             pantallaCrear.MdiParent = this;
             pantallaCrear.Show();
+           
         }
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PagoElectronico.Listados.PantallaListados pantallaListado = new PagoElectronico.Listados.PantallaListados();
-            pantallaListado.MdiParent = this;
-            pantallaListado.Show();
+            PantallaBuscarClientes buscar = new PantallaBuscarClientes();
+            buscar.MdiParent = this;
+            buscar.Show();
         }
     }
 }

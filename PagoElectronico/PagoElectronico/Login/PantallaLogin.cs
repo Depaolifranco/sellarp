@@ -36,5 +36,10 @@ namespace PagoElectronico.Login
                 MessageBox.Show("Usuario incorrecto");
             }
         }
+
+        private void textBoxPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,7 +46,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.buttonLimpiar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -220,19 +220,19 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(260, 225);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Location = new System.Drawing.Point(260, 225);
+            this.buttonGuardar.Name = "button2";
+            this.buttonGuardar.Size = new System.Drawing.Size(75, 23);
+            this.buttonGuardar.TabIndex = 18;
+            this.buttonGuardar.Text = "Guardar";
+            this.buttonGuardar.UseVisualStyleBackColor = true;
             // 
             // FormAltaCuentaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 282);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.buttonLimpiar);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
