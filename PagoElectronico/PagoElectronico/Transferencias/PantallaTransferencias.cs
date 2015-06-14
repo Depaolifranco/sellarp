@@ -30,5 +30,12 @@ namespace PagoElectronico.Transferencias
         {
             
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.Funciones.PantallaFunciones funciones = new PagoElectronico.Funciones.PantallaFunciones();
+            funciones.Show();
+            this.Close();
+        }
     }
 }

@@ -61,8 +61,9 @@
             this.buttonAceptar.TabIndex = 2;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
+            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
             // 
-            // PantallaElejirRol
+            // PantallaElegirRol
             // 
             this.AcceptButton = this.buttonAceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -71,7 +72,8 @@
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.comboBoxRoles);
             this.Controls.Add(this.labelMensaje);
-            this.Name = "PantallaElejirRol";
+            this.Name = "PantallaElegirRol";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleccion de Rol";
             this.Load += new System.EventHandler(this.PantallaElejirRol_Load);
             this.ResumeLayout(false);

@@ -38,9 +38,9 @@
             this.textBoxImporte = new System.Windows.Forms.TextBox();
             this.comboBoxTipoMoneda = new System.Windows.Forms.ComboBox();
             this.comboBoxTarjetas = new System.Windows.Forms.ComboBox();
-            this.textBoxFecha = new System.Windows.Forms.TextBox();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonAceptar = new System.Windows.Forms.Button();
+            this.maskedTextBoxFecha = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // labelCuenta
@@ -129,14 +129,6 @@
             this.comboBoxTarjetas.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTarjetas.TabIndex = 9;
             // 
-            // textBoxFecha
-            // 
-            this.textBoxFecha.Location = new System.Drawing.Point(95, 167);
-            this.textBoxFecha.Name = "textBoxFecha";
-            this.textBoxFecha.ReadOnly = true;
-            this.textBoxFecha.Size = new System.Drawing.Size(100, 20);
-            this.textBoxFecha.TabIndex = 10;
-            // 
             // buttonCancelar
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(95, 225);
@@ -145,6 +137,7 @@
             this.buttonCancelar.TabIndex = 11;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonAceptar
             // 
@@ -155,14 +148,24 @@
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
             // 
+            // maskedTextBoxFecha
+            // 
+            this.maskedTextBoxFecha.Location = new System.Drawing.Point(95, 167);
+            this.maskedTextBoxFecha.Mask = "00/00/0000";
+            this.maskedTextBoxFecha.Name = "maskedTextBoxFecha";
+            this.maskedTextBoxFecha.ReadOnly = true;
+            this.maskedTextBoxFecha.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBoxFecha.TabIndex = 13;
+            this.maskedTextBoxFecha.ValidatingType = typeof(System.DateTime);
+            // 
             // PantallaDepositos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 298);
+            this.Controls.Add(this.maskedTextBoxFecha);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.textBoxFecha);
             this.Controls.Add(this.comboBoxTarjetas);
             this.Controls.Add(this.comboBoxTipoMoneda);
             this.Controls.Add(this.textBoxImporte);
@@ -174,6 +177,7 @@
             this.Controls.Add(this.labelImporte);
             this.Controls.Add(this.labelCuenta);
             this.Name = "PantallaDepositos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Depositos";
             this.Load += new System.EventHandler(this.PantallaDepositos_Load);
             this.ResumeLayout(false);
@@ -193,8 +197,8 @@
         private System.Windows.Forms.TextBox textBoxImporte;
         private System.Windows.Forms.ComboBox comboBoxTipoMoneda;
         private System.Windows.Forms.ComboBox comboBoxTarjetas;
-        private System.Windows.Forms.TextBox textBoxFecha;
         private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Button buttonAceptar;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxFecha;
     }
 }

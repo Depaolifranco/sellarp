@@ -190,6 +190,7 @@
             this.Controls.Add(this.labelCuenta);
             this.Controls.Add(this.comboBoxCuenta);
             this.Name = "PantallaRetiros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Retiro";
             this.ResumeLayout(false);
             this.PerformLayout();

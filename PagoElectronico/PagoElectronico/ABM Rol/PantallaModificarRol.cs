@@ -9,11 +9,21 @@ using System.Windows.Forms;
 
 namespace PagoElectronico.ABM_Rol
 {
-    public partial class PantallaNuevoRol : Form
+    public partial class PantallaModificarRol : Form
     {
-        public PantallaNuevoRol()
+        public PantallaModificarRol()
         {
             InitializeComponent();
+        }
+
+        private void PantallaModificarRol_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

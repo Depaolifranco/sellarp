@@ -30,5 +30,12 @@ namespace PagoElectronico.ABM_Cliente
             buscar.MdiParent = this;
             buscar.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.Funciones.PantallaFunciones funciones = new PagoElectronico.Funciones.PantallaFunciones();
+            funciones.Show();
+            this.Close();
+        }
     }
 }

@@ -7,18 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PagoElectronico.Listados
+namespace PagoElectronico.ABM_Rol
 {
-    public partial class ListadoEstadistico : Form
+    public partial class PantallaEliminarRol : Form
     {
-        public ListadoEstadistico()
+        public PantallaEliminarRol()
         {
             InitializeComponent();
         }
 
-        private void ListadoEstadistico_Load(object sender, EventArgs e)
+        private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }

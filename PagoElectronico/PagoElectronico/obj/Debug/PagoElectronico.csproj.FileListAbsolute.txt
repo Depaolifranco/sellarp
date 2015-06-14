@@ -44,3 +44,5 @@ C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\bin\Debug\Pag
 C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Depositos.PantallaDepositos.resources
 C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cliente.PantallaBuscarClientes.resources
 C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Login.PantallaElegirRol.resources
+C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.PantallaModificarRol.resources
+C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.PantallaEliminarRol.resources

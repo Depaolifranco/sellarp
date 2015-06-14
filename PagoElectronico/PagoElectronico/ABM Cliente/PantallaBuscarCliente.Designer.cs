@@ -130,6 +130,7 @@
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.labelUsername);
             this.Name = "PantallaBuscarClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de clientes";
             this.Load += new System.EventHandler(this.PantallaListados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablaListado)).EndInit();

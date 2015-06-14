@@ -72,7 +72,7 @@
     <Compile Include="ABM Rol\PantallaABMRol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM Rol\Form1.Designer.cs">
+    <Compile Include="ABM Rol\PantallaABMRol.Designer.cs">
       <DependentUpon>PantallaABMRol.cs</DependentUpon>
     </Compile>
     <Compile Include="ABM de Usuario\Form1.cs">
@@ -86,6 +86,18 @@
     </Compile>
     <Compile Include="ABM Cliente\PantallaABMCliente.Designer.cs">
       <DependentUpon>PantallaABMCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Rol\PantallaEliminarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Rol\PantallaEliminarRol.Designer.cs">
+      <DependentUpon>PantallaEliminarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Rol\PantallaModificarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Rol\PantallaModificarRol.Designer.cs">
+      <DependentUpon>PantallaModificarRol.cs</DependentUpon>
     </Compile>
     <Compile Include="ABM Rol\PantallaNuevoRol.cs">
       <SubType>Form</SubType>
@@ -174,9 +186,14 @@
       <DependentUpon>PantallaAltaCliente.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM Rol\Form1.resx">
+    <EmbeddedResource Include="ABM Rol\PantallaABMRol.resx">
       <DependentUpon>PantallaABMRol.cs</DependentUpon>
-      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Rol\PantallaEliminarRol.resx">
+      <DependentUpon>PantallaEliminarRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Rol\PantallaModificarRol.resx">
+      <DependentUpon>PantallaModificarRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM Rol\PantallaNuevoRol.resx">
       <DependentUpon>PantallaNuevoRol.cs</DependentUpon>

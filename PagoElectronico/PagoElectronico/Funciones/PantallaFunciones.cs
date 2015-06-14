@@ -14,9 +14,7 @@ namespace PagoElectronico.Funciones
         public PantallaFunciones()
         {
             InitializeComponent();
-            //FiltrarFuncionesDeRol();
         }
-
 
 
         private void buttonABMCliente_Click(object sender, EventArgs e)
@@ -62,6 +60,23 @@ namespace PagoElectronico.Funciones
         private void PantallaFunciones_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonDeposito_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.Depositos.PantallaDepositos depositos = new PagoElectronico.Depositos.PantallaDepositos();
+            depositos.Show();
+            this.Hide();
+        }
+
+        private void buttonFacturacion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

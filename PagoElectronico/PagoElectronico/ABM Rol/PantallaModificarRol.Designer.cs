@@ -1,6 +1,6 @@
 ﻿namespace PagoElectronico.ABM_Rol
 {
-    partial class PantallaNuevoRol
+    partial class PantallaModificarRol
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelNombreRol = new System.Windows.Forms.Label();
-            this.textBoxNombreRol = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBoxFunciones = new System.Windows.Forms.GroupBox();
             this.checkBoxRetiros = new System.Windows.Forms.CheckBox();
             this.checkBoxTransferencias = new System.Windows.Forms.CheckBox();
@@ -41,28 +41,28 @@
             this.checkBoxABMUser = new System.Windows.Forms.CheckBox();
             this.checkBoxABMCuentas = new System.Windows.Forms.CheckBox();
             this.checkBoxABMClientes = new System.Windows.Forms.CheckBox();
-            this.labelEstado = new System.Windows.Forms.Label();
-            this.comboBoxEstados = new System.Windows.Forms.ComboBox();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.groupBoxFunciones.SuspendLayout();
             this.SuspendLayout();
             // 
-            // labelNombreRol
+            // label1
             // 
-            this.labelNombreRol.AutoSize = true;
-            this.labelNombreRol.Location = new System.Drawing.Point(12, 22);
-            this.labelNombreRol.Name = "labelNombreRol";
-            this.labelNombreRol.Size = new System.Drawing.Size(61, 13);
-            this.labelNombreRol.TabIndex = 0;
-            this.labelNombreRol.Text = "Nombre rol:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Rol:";
             // 
-            // textBoxNombreRol
+            // comboBox1
             // 
-            this.textBoxNombreRol.Location = new System.Drawing.Point(79, 19);
-            this.textBoxNombreRol.Name = "textBoxNombreRol";
-            this.textBoxNombreRol.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNombreRol.TabIndex = 1;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(69, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBoxFunciones
             // 
@@ -76,10 +76,10 @@
             this.groupBoxFunciones.Controls.Add(this.checkBoxABMUser);
             this.groupBoxFunciones.Controls.Add(this.checkBoxABMCuentas);
             this.groupBoxFunciones.Controls.Add(this.checkBoxABMClientes);
-            this.groupBoxFunciones.Location = new System.Drawing.Point(12, 48);
+            this.groupBoxFunciones.Location = new System.Drawing.Point(40, 72);
             this.groupBoxFunciones.Name = "groupBoxFunciones";
             this.groupBoxFunciones.Size = new System.Drawing.Size(358, 148);
-            this.groupBoxFunciones.TabIndex = 2;
+            this.groupBoxFunciones.TabIndex = 3;
             this.groupBoxFunciones.TabStop = false;
             this.groupBoxFunciones.Text = "Funciones";
             // 
@@ -183,63 +183,39 @@
             this.checkBoxABMClientes.Text = "ABM Clientes";
             this.checkBoxABMClientes.UseVisualStyleBackColor = true;
             // 
-            // labelEstado
-            // 
-            this.labelEstado.AutoSize = true;
-            this.labelEstado.Location = new System.Drawing.Point(15, 215);
-            this.labelEstado.Name = "labelEstado";
-            this.labelEstado.Size = new System.Drawing.Size(43, 13);
-            this.labelEstado.TabIndex = 3;
-            this.labelEstado.Text = "Estado:";
-            // 
-            // comboBoxEstados
-            // 
-            this.comboBoxEstados.FormattingEnabled = true;
-            this.comboBoxEstados.Items.AddRange(new object[] {
-            "Activo",
-            "No activo"});
-            this.comboBoxEstados.Location = new System.Drawing.Point(79, 212);
-            this.comboBoxEstados.Name = "comboBoxEstados";
-            this.comboBoxEstados.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxEstados.TabIndex = 4;
-            // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(79, 279);
+            this.buttonCancelar.Location = new System.Drawing.Point(69, 269);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 5;
+            this.buttonCancelar.TabIndex = 4;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonGuardar
             // 
-            this.buttonGuardar.Location = new System.Drawing.Point(217, 279);
+            this.buttonGuardar.Location = new System.Drawing.Point(208, 269);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(75, 23);
-            this.buttonGuardar.TabIndex = 6;
+            this.buttonGuardar.TabIndex = 5;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = true;
             // 
-            // PantallaNuevoRol
+            // PantallaModificarRol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(385, 335);
+            this.ClientSize = new System.Drawing.Size(421, 374);
             this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.comboBoxEstados);
-            this.Controls.Add(this.labelEstado);
             this.Controls.Add(this.groupBoxFunciones);
-            this.Controls.Add(this.textBoxNombreRol);
-            this.Controls.Add(this.labelNombreRol);
-            this.Name = "PantallaNuevoRol";
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
+            this.Name = "PantallaModificarRol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PantallaNuevoRol";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "Modificar Rol";
+            this.Load += new System.EventHandler(this.PantallaModificarRol_Load);
             this.groupBoxFunciones.ResumeLayout(false);
             this.groupBoxFunciones.PerformLayout();
             this.ResumeLayout(false);
@@ -249,21 +225,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labelNombreRol;
-        private System.Windows.Forms.TextBox textBoxNombreRol;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBoxFunciones;
-        private System.Windows.Forms.CheckBox checkBoxABMClientes;
-        private System.Windows.Forms.CheckBox checkBoxABMCuentas;
-        private System.Windows.Forms.CheckBox checkBoxABMUser;
-        private System.Windows.Forms.CheckBox checkBoxListados;
-        private System.Windows.Forms.CheckBox checkBoxABMRol;
-        private System.Windows.Forms.CheckBox checkBoxFacturacion;
-        private System.Windows.Forms.CheckBox checkBoxConsultas;
         private System.Windows.Forms.CheckBox checkBoxRetiros;
         private System.Windows.Forms.CheckBox checkBoxTransferencias;
         private System.Windows.Forms.CheckBox checkBoxDepositos;
-        private System.Windows.Forms.Label labelEstado;
-        private System.Windows.Forms.ComboBox comboBoxEstados;
+        private System.Windows.Forms.CheckBox checkBoxConsultas;
+        private System.Windows.Forms.CheckBox checkBoxFacturacion;
+        private System.Windows.Forms.CheckBox checkBoxListados;
+        private System.Windows.Forms.CheckBox checkBoxABMRol;
+        private System.Windows.Forms.CheckBox checkBoxABMUser;
+        private System.Windows.Forms.CheckBox checkBoxABMCuentas;
+        private System.Windows.Forms.CheckBox checkBoxABMClientes;
         private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Button buttonGuardar;
     }

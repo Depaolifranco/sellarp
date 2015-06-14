@@ -35,19 +35,9 @@ namespace PagoElectronico.Login
                 {
                     if (textBoxPass.Text == "w23e")
                     {
-                        PagoElectronico.Funciones.PantallaFunciones funciones = new PagoElectronico.Funciones.PantallaFunciones();
-                        funciones.Show();
+                        PantallaElegirRol elegirRol = new PantallaElegirRol();
+                        elegirRol.Show();
                         this.Hide();
-                        funciones.buttonABMCliente.Visible = true;
-                        funciones.buttonABMCuenta.Visible = true;
-                        funciones.buttonABMRol.Visible = true;
-                        funciones.buttonABMUsuario.Visible = true;
-                        funciones.buttonConsulta.Visible = true;
-                        funciones.buttonDeposito.Visible = true;
-                        funciones.buttonFacturacion.Visible = true;
-                        funciones.buttonListados.Visible = true;
-                        funciones.buttonRetiros.Visible = true;
-                        funciones.buttonTransferencias.Visible = true;
                     }
                     
                     else
@@ -81,6 +71,11 @@ namespace PagoElectronico.Login
         }
 
         private void PantallaLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

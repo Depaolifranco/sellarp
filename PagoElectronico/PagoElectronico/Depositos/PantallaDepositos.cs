@@ -28,7 +28,14 @@ namespace PagoElectronico.Depositos
 
         private void PantallaDepositos_Load(object sender, EventArgs e)
         {
-            
+            maskedTextBoxFecha.Text = DateTime.Now.ToString();
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.Funciones.PantallaFunciones funciones = new PagoElectronico.Funciones.PantallaFunciones();
+            funciones.Show();
+            this.Close();
         }
     }
 }

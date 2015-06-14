@@ -117,6 +117,7 @@
             this.buttonCancelar.TabIndex = 8;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonFinalizar
             // 
@@ -144,6 +145,7 @@
             this.Controls.Add(this.labelCuentaDestino);
             this.Controls.Add(this.labelCuentaOrigen);
             this.Name = "PantallaTransferencias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Transferencias";
             this.ResumeLayout(false);
             this.PerformLayout();

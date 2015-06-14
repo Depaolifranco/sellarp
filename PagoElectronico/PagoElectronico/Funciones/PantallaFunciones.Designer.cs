@@ -38,6 +38,7 @@
             this.buttonFacturacion = new System.Windows.Forms.Button();
             this.buttonListados = new System.Windows.Forms.Button();
             this.buttonABMRol = new System.Windows.Forms.Button();
+            this.buttonSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonABMCliente
@@ -91,6 +92,7 @@
             this.buttonDeposito.Text = "Depositos";
             this.buttonDeposito.UseVisualStyleBackColor = true;
             this.buttonDeposito.Visible = false;
+            this.buttonDeposito.Click += new System.EventHandler(this.buttonDeposito_Click);
             // 
             // buttonTransferencias
             // 
@@ -123,6 +125,7 @@
             this.buttonFacturacion.Text = "Facturación";
             this.buttonFacturacion.UseVisualStyleBackColor = true;
             this.buttonFacturacion.Visible = false;
+            this.buttonFacturacion.Click += new System.EventHandler(this.buttonFacturacion_Click);
             // 
             // buttonListados
             // 
@@ -146,11 +149,22 @@
             this.buttonABMRol.Visible = false;
             this.buttonABMRol.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonSalir
+            // 
+            this.buttonSalir.Location = new System.Drawing.Point(408, 308);
+            this.buttonSalir.Name = "buttonSalir";
+            this.buttonSalir.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalir.TabIndex = 10;
+            this.buttonSalir.Text = "Salir";
+            this.buttonSalir.UseVisualStyleBackColor = true;
+            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
+            // 
             // PantallaFunciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 356);
+            this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.buttonABMRol);
             this.Controls.Add(this.buttonListados);
             this.Controls.Add(this.buttonFacturacion);
@@ -162,6 +176,7 @@
             this.Controls.Add(this.buttonABMCuenta);
             this.Controls.Add(this.buttonABMCliente);
             this.Name = "PantallaFunciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funciones";
             this.Load += new System.EventHandler(this.PantallaFunciones_Load);
             this.ResumeLayout(false);
@@ -180,5 +195,6 @@
         public System.Windows.Forms.Button buttonTransferencias;
         public System.Windows.Forms.Button buttonRetiros;
         public System.Windows.Forms.Button buttonABMRol;
+        private System.Windows.Forms.Button buttonSalir;
     }
 }
