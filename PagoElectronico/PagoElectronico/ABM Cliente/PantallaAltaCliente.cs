@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using PagoElectronico.Properties;
 
 namespace PagoElectronico.ABM_Cliente
 {
@@ -48,7 +49,9 @@ namespace PagoElectronico.ABM_Cliente
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            maskedTextBoxFechaCreacion.Text = DateTime.Now.ToString();
+            /*
+             * Obtener fecha del appConfig.config 
+             */
         }
     }
 }

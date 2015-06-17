@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{1A425235-25E0-4A09-B3C4-84F19D9A2184}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -105,6 +105,7 @@
     <Compile Include="ABM Rol\PantallaNuevoRol.Designer.cs">
       <DependentUpon>PantallaNuevoRol.cs</DependentUpon>
     </Compile>
+    <Compile Include="BDComun.cs" />
     <Compile Include="Consulta Saldos\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,12 +189,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM Rol\PantallaABMRol.resx">
       <DependentUpon>PantallaABMRol.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM Rol\PantallaEliminarRol.resx">
       <DependentUpon>PantallaEliminarRol.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM Rol\PantallaModificarRol.resx">
       <DependentUpon>PantallaModificarRol.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM Rol\PantallaNuevoRol.resx">
       <DependentUpon>PantallaNuevoRol.cs</DependentUpon>
@@ -201,6 +205,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Depositos\PantallaDepositos.resx">
       <DependentUpon>PantallaDepositos.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Funciones\PantallaFunciones.resx">
       <DependentUpon>PantallaFunciones.cs</DependentUpon>
@@ -216,6 +221,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\PantallaElegirRol.resx">
       <DependentUpon>PantallaElegirRol.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\PantallaLogin.resx">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
@@ -223,6 +229,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaInicio.resx">
       <DependentUpon>PantallaInicio.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
@@ -231,6 +238,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Retiros\PantallaRetiros.resx">
       <DependentUpon>PantallaRetiros.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Transferencias\PantallaTransferencias.resx">
       <DependentUpon>PantallaTransferencias.cs</DependentUpon>
@@ -272,6 +280,7 @@
     <None Include="Resources\utnba.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AppConfig.config" />
     <None Include="Resources\pago electronico.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

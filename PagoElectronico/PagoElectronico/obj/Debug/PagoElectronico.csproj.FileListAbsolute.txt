@@ -14,13 +14,11 @@ C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\P
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.exe
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.pdb
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Funciones.PantallaFunciones.resources
-C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Listados.PantallaListados.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Login.PantallaLogin.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\bin\Debug\PagoElectronico.exe
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\bin\Debug\PagoElectronico.pdb
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Transferencias.PantallaTransferencias.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Listados.ListadoEstadistico.resources
-C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.Form1.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.FormABMRol.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.PantallaNuevoRol.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Retiros.PantallaRetiros.resources
@@ -46,3 +44,8 @@ C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\Pag
 C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Login.PantallaElegirRol.resources
 C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.PantallaModificarRol.resources
 C:\Users\Lauro\Desktop\GDD\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.PantallaEliminarRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.PantallaEliminarRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Rol.PantallaModificarRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Depositos.PantallaDepositos.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cliente.PantallaBuscarClientes.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Login.PantallaElegirRol.resources

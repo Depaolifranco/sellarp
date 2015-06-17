@@ -7,3 +7,23 @@ C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\Pago
 C:\Users\IEUser\Desktop\Gestion de Datos\Aplicacion Desktop\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.pdb
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.exe
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.pdb
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\bin\Release\PagoElectronico.exe
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\bin\Release\PagoElectronico.pdb
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.ABM_Cliente.PantallaABMCliente.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.ABM_Cliente.PantallaAltaCliente.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.ABM_Rol.FormABMRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.ABM_Rol.PantallaEliminarRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.ABM_Rol.PantallaModificarRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.ABM_Rol.PantallaNuevoRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Depositos.PantallaDepositos.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Funciones.PantallaFunciones.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Listados.ListadoEstadistico.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.ABM_Cliente.PantallaBuscarClientes.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Login.PantallaElegirRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Login.PantallaLogin.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.PantallaInicio.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Properties.Resources.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Retiros.PantallaRetiros.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.Transferencias.PantallaTransferencias.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Release\PagoElectronico.csproj.GenerateResource.Cache
