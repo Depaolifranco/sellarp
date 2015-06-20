@@ -450,6 +450,7 @@
             this.Name = "PantallaAltaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PantallaAltaCliente";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PantallaAltaCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

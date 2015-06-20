@@ -71,6 +71,7 @@
             this.buttonVolver.TabIndex = 2;
             this.buttonVolver.Text = "Volver";
             this.buttonVolver.UseVisualStyleBackColor = true;
+            this.buttonVolver.Click += new System.EventHandler(this.buttonVolver_Click);
             // 
             // buttonGuardar
             // 
@@ -80,6 +81,7 @@
             this.buttonGuardar.TabIndex = 3;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // labelTipoCtaActual
             // 
@@ -92,11 +94,12 @@
             // 
             // textBoxTipoCtaActual
             // 
+            this.textBoxTipoCtaActual.Enabled = false;
             this.textBoxTipoCtaActual.Location = new System.Drawing.Point(144, 26);
             this.textBoxTipoCtaActual.Name = "textBoxTipoCtaActual";
+            this.textBoxTipoCtaActual.ReadOnly = true;
             this.textBoxTipoCtaActual.Size = new System.Drawing.Size(121, 20);
             this.textBoxTipoCtaActual.TabIndex = 5;
-            this.textBoxTipoCtaActual.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FormFormularioModif
             // 

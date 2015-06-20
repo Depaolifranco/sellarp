@@ -60,6 +60,7 @@
             this.buttonModificar.TabIndex = 8;
             this.buttonModificar.Text = "Modificar";
             this.buttonModificar.UseVisualStyleBackColor = true;
+            this.buttonModificar.Click += new System.EventHandler(this.buttonModificar_Click);
             // 
             // FormModifTipoCta
             // 
@@ -71,6 +72,7 @@
             this.Controls.Add(this.labelNroCuenta);
             this.Name = "FormModifTipoCta";
             this.Text = "Modificacion de Cuenta";
+            this.Load += new System.EventHandler(this.FormModifTipoCta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

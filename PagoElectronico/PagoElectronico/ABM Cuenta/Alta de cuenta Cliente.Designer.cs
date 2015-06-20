@@ -43,10 +43,10 @@
             this.labelFechaCierre = new System.Windows.Forms.Label();
             this.labelFechaApertura = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxFechaVenc = new System.Windows.Forms.TextBox();
+            this.textBoxFechaApe = new System.Windows.Forms.TextBox();
             this.buttonLimpiar = new System.Windows.Forms.Button();
-            this.buttonGuardar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -90,7 +90,6 @@
             this.textBox2Pais.Name = "textBox2Pais";
             this.textBox2Pais.Size = new System.Drawing.Size(100, 20);
             this.textBox2Pais.TabIndex = 4;
-            this.textBox2Pais.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4Moneda
             // 
@@ -129,7 +128,6 @@
             this.labelEstado.Size = new System.Drawing.Size(40, 13);
             this.labelEstado.TabIndex = 8;
             this.labelEstado.Text = "Estado";
-            this.labelEstado.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBoxTipoCta
             // 
@@ -190,23 +188,23 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 14;
             // 
-            // textBox2
+            // textBoxFechaVenc
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(379, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 15;
+            this.textBoxFechaVenc.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxFechaVenc.Enabled = false;
+            this.textBoxFechaVenc.Location = new System.Drawing.Point(379, 67);
+            this.textBoxFechaVenc.Name = "textBoxFechaVenc";
+            this.textBoxFechaVenc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFechaVenc.TabIndex = 15;
             // 
-            // textBox3
+            // textBoxFechaApe
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(379, 37);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 16;
+            this.textBoxFechaApe.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxFechaApe.Enabled = false;
+            this.textBoxFechaApe.Location = new System.Drawing.Point(379, 37);
+            this.textBoxFechaApe.Name = "textBoxFechaApe";
+            this.textBoxFechaApe.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFechaApe.TabIndex = 16;
             // 
             // buttonLimpiar
             // 
@@ -220,22 +218,23 @@
             // 
             // button2
             // 
-            this.buttonGuardar.Location = new System.Drawing.Point(260, 225);
-            this.buttonGuardar.Name = "button2";
-            this.buttonGuardar.Size = new System.Drawing.Size(75, 23);
-            this.buttonGuardar.TabIndex = 18;
-            this.buttonGuardar.Text = "Guardar";
-            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(260, 225);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // FormAltaCuentaCliente
+            // FormAltaCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 282);
-            this.Controls.Add(this.buttonGuardar);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonLimpiar);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxFechaApe);
+            this.Controls.Add(this.textBoxFechaVenc);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelFechaApertura);
             this.Controls.Add(this.labelFechaCierre);
@@ -251,9 +250,9 @@
             this.Controls.Add(this.label2Nro);
             this.Controls.Add(this.textBox1Nro);
             this.Controls.Add(this.label1);
-            this.Name = "FormAltaCuentaCliente";
+            this.Name = "FormAltaCuenta";
             this.Text = "Formulario de Alta";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FormAltaCuenta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,8 +275,8 @@
         private System.Windows.Forms.Label labelFechaCierre;
         private System.Windows.Forms.Label labelFechaApertura;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxFechaVenc;
+        private System.Windows.Forms.TextBox textBoxFechaApe;
         private System.Windows.Forms.Button buttonLimpiar;
         private System.Windows.Forms.Button button2;
     }

@@ -69,6 +69,48 @@
     <Compile Include="ABM Cliente\PantallaAltaCliente.Designer.cs">
       <DependentUpon>PantallaAltaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM Cuenta\Admin Modif Tipo de Cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cuenta\Admin Modif Tipo de Cuentas.designer.cs">
+      <DependentUpon>Admin Modif Tipo de Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Cuenta\Alta de cuenta Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cuenta\Alta de cuenta Cliente.designer.cs">
+      <DependentUpon>Alta de cuenta Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Cuenta\Busqueda de User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cuenta\Busqueda de User.designer.cs">
+      <DependentUpon>Busqueda de User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Cuenta\Formulario de Baja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cuenta\Formulario de Baja.designer.cs">
+      <DependentUpon>Formulario de Baja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Cuenta\Formulario de Modificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cuenta\Formulario de Modificacion.designer.cs">
+      <DependentUpon>Formulario de Modificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Cuenta\Listado Modificacion de Tipo de Cta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cuenta\Listado Modificacion de Tipo de Cta.designer.cs">
+      <DependentUpon>Listado Modificacion de Tipo de Cta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Cuenta\Menu ABM Cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Cuenta\Menu ABM Cuenta.designer.cs">
+      <DependentUpon>Menu ABM Cuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM Rol\PantallaABMRol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,12 +147,54 @@
     <Compile Include="ABM Rol\PantallaNuevoRol.Designer.cs">
       <DependentUpon>PantallaNuevoRol.cs</DependentUpon>
     </Compile>
-    <Compile Include="BDComun.cs" />
-    <Compile Include="Consulta Saldos\Form1.cs">
+    <Compile Include="Asocicar Desasociar Tarjeta\Busqueda de Tarjeta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consulta Saldos\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Asocicar Desasociar Tarjeta\Busqueda de Tarjeta.designer.cs">
+      <DependentUpon>Busqueda de Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asocicar Desasociar Tarjeta\Formulario De Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asocicar Desasociar Tarjeta\Formulario De Alta.designer.cs">
+      <DependentUpon>Formulario De Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asocicar Desasociar Tarjeta\Modificar Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asocicar Desasociar Tarjeta\Modificar Tarjeta.designer.cs">
+      <DependentUpon>Modificar Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asocicar Desasociar Tarjeta\Tarjetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asocicar Desasociar Tarjeta\Tarjetas.designer.cs">
+      <DependentUpon>Tarjetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDComun.cs" />
+    <Compile Include="Consulta de Saldo\ConsultaDeSaldoDeCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta de Saldo\ConsultaDeSaldoDeCuentas.designer.cs">
+      <DependentUpon>ConsultaDeSaldoDeCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\Facturaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\Facturaciones.designer.cs">
+      <DependentUpon>Facturaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\Facturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\Facturar.designer.cs">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\ModificarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\ModificarFactura.designer.cs">
+      <DependentUpon>ModificarFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Funciones\PantallaFunciones.cs">
       <SubType>Form</SubType>
@@ -129,12 +213,6 @@
     </Compile>
     <Compile Include="ABM Cliente\PantallaBuscarCliente.Designer.cs">
       <DependentUpon>PantallaBuscarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Facturacion\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Facturacion\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\PantallaElegirRol.cs">
       <SubType>Form</SubType>
@@ -187,6 +265,21 @@
       <DependentUpon>PantallaAltaCliente.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cuenta\Alta de cuenta Cliente.resx">
+      <DependentUpon>Alta de cuenta Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cuenta\Busqueda de User.resx">
+      <DependentUpon>Busqueda de User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cuenta\Formulario de Baja.resx">
+      <DependentUpon>Formulario de Baja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cuenta\Formulario de Modificacion.resx">
+      <DependentUpon>Formulario de Modificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Cuenta\Menu ABM Cuenta.resx">
+      <DependentUpon>Menu ABM Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ABM Rol\PantallaABMRol.resx">
       <DependentUpon>PantallaABMRol.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -203,9 +296,21 @@
       <DependentUpon>PantallaNuevoRol.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consulta de Saldo\ConsultaDeSaldoDeCuentas.resx">
+      <DependentUpon>ConsultaDeSaldoDeCuentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Depositos\PantallaDepositos.resx">
       <DependentUpon>PantallaDepositos.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\Facturaciones.resx">
+      <DependentUpon>Facturaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\Facturar.resx">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\ModificarFactura.resx">
+      <DependentUpon>ModificarFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Funciones\PantallaFunciones.resx">
       <DependentUpon>PantallaFunciones.cs</DependentUpon>

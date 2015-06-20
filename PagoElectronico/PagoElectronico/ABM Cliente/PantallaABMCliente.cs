@@ -37,5 +37,10 @@ namespace PagoElectronico.ABM_Cliente
             funciones.Show();
             this.Close();
         }
+
+        private void PantallaABMCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

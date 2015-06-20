@@ -61,6 +61,7 @@
             this.buttonABMCuenta.Text = "ABM Cuenta";
             this.buttonABMCuenta.UseVisualStyleBackColor = true;
             this.buttonABMCuenta.Visible = false;
+            this.buttonABMCuenta.Click += new System.EventHandler(this.buttonABMCuenta_Click);
             // 
             // buttonABMUsuario
             // 

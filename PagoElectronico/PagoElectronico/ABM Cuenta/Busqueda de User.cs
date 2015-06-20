@@ -15,5 +15,10 @@ namespace PagoElectronico.ABM_Cuenta
         {
             InitializeComponent();
         }
+
+        private void FormBusquedaUserxAlta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

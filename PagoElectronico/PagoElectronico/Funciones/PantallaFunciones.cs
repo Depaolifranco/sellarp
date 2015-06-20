@@ -71,12 +71,21 @@ namespace PagoElectronico.Funciones
 
         private void buttonFacturacion_Click(object sender, EventArgs e)
         {
-
+            PagoElectronico.Facturacion.Facturaciones facturaciones = new PagoElectronico.Facturacion.Facturaciones();
+            facturaciones.Show();
+            this.Hide();
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonABMCuenta_Click(object sender, EventArgs e)
+        {
+            PagoElectronico.ABM_Cuenta.FormMainABMCuenta cuentas = new PagoElectronico.ABM_Cuenta.FormMainABMCuenta();           
+            cuentas.Show();
+            this.Hide();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace PagoElectronico.ABM_Cliente
 
         private void PantallaListados_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

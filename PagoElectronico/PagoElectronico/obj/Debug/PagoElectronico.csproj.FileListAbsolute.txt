@@ -49,3 +49,12 @@ C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\P
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Depositos.PantallaDepositos.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cliente.PantallaBuscarClientes.resources
 C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Login.PantallaElegirRol.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cuenta.FormAltaCuenta.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cuenta.FormBusquedaUserxAlta.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cuenta.Listado_Seleccion_Baja.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cuenta.FormFormularioModif.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.ABM_Cuenta.FormMainABMCuenta.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Listados.ConsultaDeSaldoDeCuentas.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Facturacion.Facturaciones.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Facturacion.Facturar.resources
+C:\Users\Esteban\Documents\Visual Studio 2008\Projects\sellarp\PagoElectronico\PagoElectronico\obj\Debug\PagoElectronico.Facturacion.ModificarFactura.resources

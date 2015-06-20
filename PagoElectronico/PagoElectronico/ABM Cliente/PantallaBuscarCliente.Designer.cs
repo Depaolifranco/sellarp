@@ -132,6 +132,7 @@
             this.Name = "PantallaBuscarClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de clientes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PantallaListados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablaListado)).EndInit();
             this.ResumeLayout(false);

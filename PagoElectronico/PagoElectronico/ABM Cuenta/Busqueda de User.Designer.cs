@@ -86,6 +86,7 @@
             this.Controls.Add(this.labelBuscaUsr);
             this.Name = "FormBusquedaUserxAlta";
             this.Text = "Buscar Usuario";
+            this.Load += new System.EventHandler(this.FormBusquedaUserxAlta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

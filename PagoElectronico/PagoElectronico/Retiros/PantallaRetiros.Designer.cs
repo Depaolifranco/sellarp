@@ -192,6 +192,8 @@
             this.Name = "PantallaRetiros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Retiro";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PantallaRetiros_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

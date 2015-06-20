@@ -27,5 +27,10 @@ namespace PagoElectronico.Retiros
             PagoElectronico.Funciones.PantallaFunciones funciones = new PagoElectronico.Funciones.PantallaFunciones();
             funciones.Show();
         }
+
+        private void PantallaRetiros_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
