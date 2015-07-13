@@ -172,6 +172,25 @@
       <DependentUpon>Tarjetas.cs</DependentUpon>
     </Compile>
     <Compile Include="BDComun.cs" />
+    <Compile Include="Clases\Banco.cs" />
+    <Compile Include="Clases\Cheque.cs" />
+    <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\Cuenta.cs" />
+    <Compile Include="Clases\Deposito.cs" />
+    <Compile Include="Clases\Emisor_Tarjeta.cs" />
+    <Compile Include="Clases\Estado_Cuenta.cs" />
+    <Compile Include="Clases\Factura.cs" />
+    <Compile Include="Clases\Funcionalidad.cs" />
+    <Compile Include="Clases\Item_Factura.cs" />
+    <Compile Include="Clases\Login.cs" />
+    <Compile Include="Clases\Moneda.cs" />
+    <Compile Include="Clases\Pais.cs" />
+    <Compile Include="Clases\Retiro.cs" />
+    <Compile Include="Clases\Rol.cs" />
+    <Compile Include="Clases\Tarjeta.cs" />
+    <Compile Include="Clases\Tipo_Cuenta.cs" />
+    <Compile Include="Clases\Transferencia.cs" />
+    <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Consulta de Saldo\ConsultaDeSaldoDeCuentas.cs">
       <SubType>Form</SubType>
     </Compile>

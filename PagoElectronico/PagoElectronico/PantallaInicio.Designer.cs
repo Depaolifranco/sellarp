@@ -35,6 +35,7 @@
             this.pictureBoxPagoElec = new System.Windows.Forms.PictureBox();
             this.pictureBoxUtn = new System.Windows.Forms.PictureBox();
             this.labelPagoElec = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPagoElec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUtn)).BeginInit();
             this.SuspendLayout();
@@ -100,12 +101,20 @@
             this.labelPagoElec.Text = "Pago Electrónico";
             this.labelPagoElec.Click += new System.EventHandler(this.labelPagoElec_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(100, 313);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 6;
+            // 
             // PantallaInicio
             // 
             this.AcceptButton = this.buttonIngresar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 345);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.labelPagoElec);
             this.Controls.Add(this.pictureBoxPagoElec);
             this.Controls.Add(this.pictureBoxUtn);
@@ -132,6 +141,7 @@
         private System.Windows.Forms.PictureBox pictureBoxUtn;
         private System.Windows.Forms.PictureBox pictureBoxPagoElec;
         private System.Windows.Forms.Label labelPagoElec;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
